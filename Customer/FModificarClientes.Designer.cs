@@ -144,6 +144,7 @@
 			tbcCliente.Controls.Add(tbpFoto);
 			tbcCliente.Controls.Add(tbpRedes);
 			tbcCliente.Controls.Add(tbpOtros);
+			tbcCliente.Enabled = false;
 			tbcCliente.Location = new Point(12, 169);
 			tbcCliente.Name = "tbcCliente";
 			tbcCliente.SelectedIndex = 0;
@@ -426,10 +427,10 @@
 			tbpRedes.Controls.Add(label14);
 			tbpRedes.Controls.Add(label13);
 			tbpRedes.Controls.Add(cmbRedesSociales);
-			tbpRedes.Location = new Point(4, 47);
+			tbpRedes.Location = new Point(4, 24);
 			tbpRedes.Name = "tbpRedes";
 			tbpRedes.Padding = new Padding(3);
-			tbpRedes.Size = new Size(702, 469);
+			tbpRedes.Size = new Size(702, 492);
 			tbpRedes.TabIndex = 4;
 			tbpRedes.Text = "Redes";
 			tbpRedes.UseVisualStyleBackColor = true;

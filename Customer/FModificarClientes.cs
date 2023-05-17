@@ -63,16 +63,20 @@ namespace Customer
 
 		private void CargarDatos()
 		{
-			txtNombre.Text = OCliente.Nombre;
-			txtApellido.Text = OCliente.Apellido;
-			txtDni.Text = OCliente.Dni;
-			txtDireccion.Text = OCliente.Direccion ?? " ";
-			txtTelefono.Text = OCliente.Telefono ?? " ";
-			txtMail.Text = OCliente.Mail ?? " ";
-			txtComentario.Text = OCliente.Comentario ?? " ";
-			dtpNacimiento.Value = OCliente.FechaNacimiento ?? DateTime.Now;
-			dtpInscripcion.Value = OCliente.FechaInscripcion ?? DateTime.Now;
-			listaredes = Repo.Redes(Convert.ToInt32(txtDni.Text));
+			try
+			{
+				txtNombre.Text = OCliente.Nombre;
+				txtApellido.Text = OCliente.Apellido;
+				txtDni.Text = OCliente.Dni;
+				txtDireccion.Text = OCliente.Direccion ?? " ";
+				txtTelefono.Text = OCliente.Telefono ?? " ";
+				txtMail.Text = OCliente.Mail ?? " ";
+				txtComentario.Text = OCliente.Comentario ?? " ";
+				dtpNacimiento.Value = OCliente.FechaNacimiento ?? DateTime.Now;
+				dtpInscripcion.Value = OCliente.FechaInscripcion ?? DateTime.Now;
+				listaredes = Repo.Redes(Convert.ToInt32(txtDni.Text));
+			}
+			catch { }
 		}
 		private void CargarCliente()
 		{
@@ -111,9 +115,18 @@ namespace Customer
 
 		private void btnBuscar_Click(object sender, EventArgs e)
 		{
-			OCliente = Repo.Get(txtDniAbuscar.Text);
-			Habilitar(true);
-			CargarDatos();
+			if (Repo.HayClientes(Convert.ToInt32(txtDniAbuscar.Text)))
+			{
+				OCliente = Repo.Get(txtDniAbuscar.Text);
+				Habilitar(true);
+				CargarDatos();
+			}
+			else
+			{
+				Mensaje.Mostrar("Ups", "No se encontro el cliente", TipoMensaje.Error);
+				Limpiar();
+				Habilitar(false);
+			}
 		}
 
 		private void btnAceptar_Click(object sender, EventArgs e)
@@ -121,6 +134,12 @@ namespace Customer
 			CargarCliente();
 			if (Repo.Modificar(OCliente)) Mensaje.Mostrar("OK", "Cliente modificado con exito", TipoMensaje.Informacion);
 			else Mensaje.Mostrar("Ups", "Error al modificar el cliente", TipoMensaje.Error);
+			if(Repo.AgregarRedes(Convert.ToInt32( OCliente.Dni), listaredes))
+				Mensaje.Mostrar("OK", "Redes agregadas con exito", TipoMensaje.Informacion);
+			else
+				Mensaje.Mostrar("Ups", "Error al agregar las redes", TipoMensaje.Error);
+
+			btnCerrar_Click(new(), new());
 		}
 
 		private void tbpFoto_Enter(object sender, EventArgs e)
@@ -261,9 +280,10 @@ namespace Customer
 		}
 		private void ActualizarRedes()
 		{
+			ltbUsuariosRedes.DataSource = null;
 			ltbUsuariosRedes.Items.Clear();
 			ltbUsuariosRedes.DataSource = listaredes;
-			ltbUsuariosRedes.DisplayMember = "Completo";
+			ltbUsuariosRedes.DisplayMember = "Completo";			
 		}
 
 		private void btnAgregarRedSocial_Click(object sender, EventArgs e)
@@ -279,7 +299,7 @@ namespace Customer
 
 		private void btnQuitarRedSocial_Click(object sender, EventArgs e)
 		{
-			if(ltbUsuariosRedes.SelectedIndex >=0)
+			if (ltbUsuariosRedes.SelectedIndex >= 0)
 			{
 				listaredes.RemoveAt(ltbUsuariosRedes.SelectedIndex);
 				ActualizarRedes();

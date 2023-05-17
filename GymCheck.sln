@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Control", "Control\Control.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymCheck.Mensajes", "GymCheck.Mensajes\GymCheck.Mensajes.csproj", "{1F2B431E-E2CD-4B05-9E3D-71AD2045E0B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer", "Customer\Customer.csproj", "{2286B649-EE04-4925-81A3-F0948DB5DCA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1F2B431E-E2CD-4B05-9E3D-71AD2045E0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F2B431E-E2CD-4B05-9E3D-71AD2045E0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F2B431E-E2CD-4B05-9E3D-71AD2045E0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2286B649-EE04-4925-81A3-F0948DB5DCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2286B649-EE04-4925-81A3-F0948DB5DCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2286B649-EE04-4925-81A3-F0948DB5DCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2286B649-EE04-4925-81A3-F0948DB5DCA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{BCAF870E-64DA-46AB-BABB-6851114320B8} = {188098EB-CCCD-48D1-B982-AEF44259197E}
 		{6ACF2E36-DA43-419F-BB27-3C5CDA471815} = {64DD5D5A-FDF3-49DC-AB09-4DD1184DE4CE}
 		{1F2B431E-E2CD-4B05-9E3D-71AD2045E0B3} = {64DD5D5A-FDF3-49DC-AB09-4DD1184DE4CE}
+		{2286B649-EE04-4925-81A3-F0948DB5DCA1} = {64DD5D5A-FDF3-49DC-AB09-4DD1184DE4CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {490D3B48-0AC8-4122-98BA-D0B2DDE582C2}
