@@ -74,13 +74,13 @@ namespace Miselaneas
 			CPagoDto pago = new CPagoDto();
 			pago.Fecha = DateTime.Now;
 			var dnicliente = Convert.ToInt32(txtDni.Text);
-			var aux = repoCliente.ObtenerIdCliente(dnicliente);		
+			var aux = repoCliente.ObtenerIdCliente(dnicliente);
 			pago.IdCliente = aux;
 			pago.MedioDePago = cmbMedios.SelectedItem.ToString();
 			pago.Monto = Convert.ToDouble(txtMonto.Text);
 			repoPago.Pagar(pago);
 			var nc = repoCliente.ObtenerNombreCompleto(aux);
-			Mensaje.Mostrar("Registro exitoso","Se ha registrado el pago de " + nc + " por $" + pago.Monto + " con " + pago.MedioDePago,TipoMensaje.Informacion);
+			Mensaje.Mostrar("Registro exitoso", "Se ha registrado el pago de " + nc + " por $" + pago.Monto + " con " + pago.MedioDePago, TipoMensaje.Informacion);
 			this.Close();
 		}
 	}

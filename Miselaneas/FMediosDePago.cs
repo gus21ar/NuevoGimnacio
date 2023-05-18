@@ -25,18 +25,18 @@ namespace Miselaneas
 		{
 			if (txtNombre.Text.IsNullOrEmpty())
 			{
-				Mensaje.Mostrar("¡Alto!","Debe ingresar un nombre",TipoMensaje.Advertencia);
+				Mensaje.Mostrar("¡Alto!", "Debe ingresar un nombre", TipoMensaje.Advertencia);
 				return;
 			}
 			try
 			{
 				repo.Agregar(txtNombre.Text);
-				Mensaje.Mostrar("Exito","Medio de pago agregado correctamente", TipoMensaje.Informacion);
+				Mensaje.Mostrar("Exito", "Medio de pago agregado correctamente", TipoMensaje.Informacion);
 				this.Close();
 			}
 			catch (Exception ex)
 			{
-				Mensaje.Mostrar("¡Ups!", ex.Message,TipoMensaje.Error);
+				Mensaje.Mostrar("¡Ups!", ex.Message, TipoMensaje.Error);
 			}
 
 		}

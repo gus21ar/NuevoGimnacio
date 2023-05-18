@@ -46,6 +46,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(16, 13);
 			label1.Name = "label1";
 			label1.Size = new Size(314, 38);
@@ -57,6 +58,7 @@
 			chbIngreso.AutoSize = true;
 			chbIngreso.Checked = true;
 			chbIngreso.CheckState = CheckState.Checked;
+			chbIngreso.ForeColor = Color.White;
 			chbIngreso.Location = new Point(16, 127);
 			chbIngreso.Name = "chbIngreso";
 			chbIngreso.Size = new Size(208, 42);
@@ -86,6 +88,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.ForeColor = Color.White;
 			label2.Location = new Point(16, 189);
 			label2.Name = "label2";
 			label2.Size = new Size(359, 38);
@@ -94,6 +97,8 @@
 			// 
 			// txtComentario
 			// 
+			txtComentario.BackColor = Color.DarkGray;
+			txtComentario.ForeColor = Color.White;
 			txtComentario.Location = new Point(16, 230);
 			txtComentario.Multiline = true;
 			txtComentario.Name = "txtComentario";
@@ -149,7 +154,7 @@
 			// 
 			// panel2
 			// 
-			panel2.BackColor = SystemColors.Control;
+			panel2.BackColor = Color.DimGray;
 			panel2.Controls.Add(label1);
 			panel2.Controls.Add(panel1);
 			panel2.Controls.Add(chbIngreso);
@@ -166,7 +171,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = SystemColors.ActiveCaptionText;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(830, 710);
 			Controls.Add(panel2);
 			Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);

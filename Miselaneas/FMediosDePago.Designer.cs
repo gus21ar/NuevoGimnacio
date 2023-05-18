@@ -38,6 +38,7 @@
 			// 
 			label1.AutoSize = true;
 			label1.Font = new Font("Georgia", 48F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(12, 9);
 			label1.Name = "label1";
 			label1.Size = new Size(715, 72);
@@ -47,6 +48,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.ForeColor = Color.White;
 			label2.Location = new Point(12, 136);
 			label2.Name = "label2";
 			label2.Size = new Size(143, 38);
@@ -55,6 +57,8 @@
 			// 
 			// txtNombre
 			// 
+			txtNombre.BackColor = Color.DarkGray;
+			txtNombre.ForeColor = Color.White;
 			txtNombre.Location = new Point(161, 136);
 			txtNombre.Name = "txtNombre";
 			txtNombre.Size = new Size(561, 44);
@@ -62,25 +66,27 @@
 			// 
 			// btnAgregar
 			// 
+			btnAgregar.BackColor = Color.OliveDrab;
+			btnAgregar.ForeColor = Color.White;
 			btnAgregar.Location = new Point(12, 220);
 			btnAgregar.Name = "btnAgregar";
 			btnAgregar.Size = new Size(715, 179);
 			btnAgregar.TabIndex = 3;
 			btnAgregar.Text = "Agregar";
-			btnAgregar.UseVisualStyleBackColor = true;
+			btnAgregar.UseVisualStyleBackColor = false;
 			btnAgregar.Click += btnAgregar_Click;
 			// 
 			// FMediosDePago
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(734, 411);
 			Controls.Add(btnAgregar);
 			Controls.Add(txtNombre);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
-			Margin = new Padding(8, 8, 8, 8);
+			Margin = new Padding(8);
 			Name = "FMediosDePago";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Agregar Medios De Pago";

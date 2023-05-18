@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-			DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
 			dtpDesde = new DateTimePicker();
 			btnGenerar = new Button();
 			rbtAsistencias = new RadioButton();
@@ -58,12 +58,13 @@
 			// 
 			// btnGenerar
 			// 
+			btnGenerar.BackColor = Color.SteelBlue;
 			btnGenerar.Location = new Point(607, 80);
 			btnGenerar.Name = "btnGenerar";
 			btnGenerar.Size = new Size(262, 93);
 			btnGenerar.TabIndex = 2;
 			btnGenerar.Text = "Generar";
-			btnGenerar.UseVisualStyleBackColor = true;
+			btnGenerar.UseVisualStyleBackColor = false;
 			btnGenerar.Click += btnGenerar_Click;
 			// 
 			// rbtAsistencias
@@ -90,22 +91,22 @@
 			// 
 			// dgvVisor
 			// 
-			dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle3.BackColor = Color.Black;
-			dataGridViewCellStyle3.Font = new Font("Georgia", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-			dataGridViewCellStyle3.ForeColor = Color.White;
-			dgvVisor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.BackColor = Color.Black;
+			dataGridViewCellStyle1.Font = new Font("Georgia", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+			dataGridViewCellStyle1.ForeColor = Color.White;
+			dgvVisor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			dgvVisor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 			dgvVisor.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 			dgvVisor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle4.BackColor = SystemColors.Window;
-			dataGridViewCellStyle4.Font = new Font("Georgia", 16F, FontStyle.Regular, GraphicsUnit.Point);
-			dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
-			dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-			dgvVisor.DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = SystemColors.Window;
+			dataGridViewCellStyle2.Font = new Font("Georgia", 16F, FontStyle.Regular, GraphicsUnit.Point);
+			dataGridViewCellStyle2.ForeColor = Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+			dgvVisor.DefaultCellStyle = dataGridViewCellStyle2;
 			dgvVisor.Location = new Point(12, 197);
 			dgvVisor.Name = "dgvVisor";
 			dgvVisor.RowTemplate.Height = 25;
@@ -123,22 +124,24 @@
 			// 
 			// btnSalir
 			// 
+			btnSalir.BackColor = Color.Firebrick;
 			btnSalir.Location = new Point(3, 10);
 			btnSalir.Name = "btnSalir";
 			btnSalir.Size = new Size(160, 50);
 			btnSalir.TabIndex = 1;
 			btnSalir.Text = "Salir";
-			btnSalir.UseVisualStyleBackColor = true;
+			btnSalir.UseVisualStyleBackColor = false;
 			btnSalir.Click += btnSalir_Click;
 			// 
 			// btnGuardar
 			// 
+			btnGuardar.BackColor = Color.OliveDrab;
 			btnGuardar.Location = new Point(697, 10);
 			btnGuardar.Name = "btnGuardar";
 			btnGuardar.Size = new Size(160, 50);
 			btnGuardar.TabIndex = 0;
 			btnGuardar.Text = "Guardar";
-			btnGuardar.UseVisualStyleBackColor = true;
+			btnGuardar.UseVisualStyleBackColor = false;
 			btnGuardar.Click += btnGuardar_Click;
 			// 
 			// label1
@@ -196,6 +199,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(884, 791);
 			Controls.Add(chbHoy);
 			Controls.Add(pnlFecha);
@@ -204,6 +208,7 @@
 			Controls.Add(rbtPagos);
 			Controls.Add(rbtAsistencias);
 			Controls.Add(btnGenerar);
+			ForeColor = Color.White;
 			Name = "FReportes";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Reportes";

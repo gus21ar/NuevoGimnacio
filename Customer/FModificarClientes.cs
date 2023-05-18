@@ -134,7 +134,7 @@ namespace Customer
 			CargarCliente();
 			if (Repo.Modificar(OCliente)) Mensaje.Mostrar("OK", "Cliente modificado con exito", TipoMensaje.Informacion);
 			else Mensaje.Mostrar("Ups", "Error al modificar el cliente", TipoMensaje.Error);
-			if(Repo.AgregarRedes(Convert.ToInt32( OCliente.Dni), listaredes))
+			if (Repo.AgregarRedes(Convert.ToInt32(OCliente.Dni), listaredes))
 				Mensaje.Mostrar("OK", "Redes agregadas con exito", TipoMensaje.Informacion);
 			else
 				Mensaje.Mostrar("Ups", "Error al agregar las redes", TipoMensaje.Error);
@@ -283,7 +283,7 @@ namespace Customer
 			ltbUsuariosRedes.DataSource = null;
 			ltbUsuariosRedes.Items.Clear();
 			ltbUsuariosRedes.DataSource = listaredes;
-			ltbUsuariosRedes.DisplayMember = "Completo";			
+			ltbUsuariosRedes.DisplayMember = "Completo";
 		}
 
 		private void btnAgregarRedSocial_Click(object sender, EventArgs e)

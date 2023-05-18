@@ -45,6 +45,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(12, 15);
 			label1.Name = "label1";
 			label1.Size = new Size(164, 38);
@@ -54,6 +55,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.ForeColor = Color.White;
 			label2.Location = new Point(12, 91);
 			label2.Name = "label2";
 			label2.Size = new Size(129, 38);
@@ -62,17 +64,21 @@
 			// 
 			// btnAgregar
 			// 
+			btnAgregar.BackColor = Color.OliveDrab;
 			btnAgregar.Enabled = false;
+			btnAgregar.ForeColor = Color.White;
 			btnAgregar.Location = new Point(12, 151);
 			btnAgregar.Name = "btnAgregar";
 			btnAgregar.Size = new Size(802, 79);
 			btnAgregar.TabIndex = 2;
 			btnAgregar.Text = "Agregar";
-			btnAgregar.UseVisualStyleBackColor = true;
+			btnAgregar.UseVisualStyleBackColor = false;
 			btnAgregar.Click += btnAgregar_Click;
 			// 
 			// cmbRedes
 			// 
+			cmbRedes.BackColor = Color.DarkGray;
+			cmbRedes.ForeColor = Color.White;
 			cmbRedes.FormattingEnabled = true;
 			cmbRedes.Location = new Point(182, 12);
 			cmbRedes.Name = "cmbRedes";
@@ -81,6 +87,8 @@
 			// 
 			// txtUsuario
 			// 
+			txtUsuario.BackColor = Color.DarkGray;
+			txtUsuario.ForeColor = Color.White;
 			txtUsuario.Location = new Point(182, 85);
 			txtUsuario.Name = "txtUsuario";
 			txtUsuario.Size = new Size(632, 44);
@@ -89,6 +97,8 @@
 			// 
 			// lsbRedesUser
 			// 
+			lsbRedesUser.BackColor = Color.Silver;
+			lsbRedesUser.ForeColor = Color.Bisque;
 			lsbRedesUser.FormattingEnabled = true;
 			lsbRedesUser.ItemHeight = 38;
 			lsbRedesUser.Location = new Point(12, 236);
@@ -98,46 +108,55 @@
 			// 
 			// btnQuitar
 			// 
+			btnQuitar.BackColor = Color.Firebrick;
+			btnQuitar.ForeColor = Color.White;
 			btnQuitar.Location = new Point(654, 236);
 			btnQuitar.Name = "btnQuitar";
 			btnQuitar.Size = new Size(160, 61);
 			btnQuitar.TabIndex = 6;
 			btnQuitar.Text = "Quitar";
-			btnQuitar.UseVisualStyleBackColor = true;
+			btnQuitar.UseVisualStyleBackColor = false;
 			btnQuitar.Click += btnQuitar_Click;
 			// 
 			// btnAnterior
 			// 
+			btnAnterior.BackColor = Color.SteelBlue;
+			btnAnterior.ForeColor = Color.White;
 			btnAnterior.Location = new Point(3, 10);
 			btnAnterior.Name = "btnAnterior";
 			btnAnterior.Size = new Size(160, 50);
 			btnAnterior.TabIndex = 7;
 			btnAnterior.Text = "Anterior";
-			btnAnterior.UseVisualStyleBackColor = true;
+			btnAnterior.UseVisualStyleBackColor = false;
 			btnAnterior.Click += btnAnterior_Click;
 			// 
 			// btnCancelar
 			// 
+			btnCancelar.BackColor = Color.Firebrick;
+			btnCancelar.ForeColor = Color.White;
 			btnCancelar.Location = new Point(318, 10);
 			btnCancelar.Name = "btnCancelar";
 			btnCancelar.Size = new Size(160, 50);
 			btnCancelar.TabIndex = 8;
 			btnCancelar.Text = "Cancelar";
-			btnCancelar.UseVisualStyleBackColor = true;
+			btnCancelar.UseVisualStyleBackColor = false;
 			btnCancelar.Click += btnCancelar_Click;
 			// 
 			// btnSiguiente
 			// 
+			btnSiguiente.BackColor = Color.SteelBlue;
+			btnSiguiente.ForeColor = Color.White;
 			btnSiguiente.Location = new Point(639, 10);
 			btnSiguiente.Name = "btnSiguiente";
 			btnSiguiente.Size = new Size(160, 50);
 			btnSiguiente.TabIndex = 9;
 			btnSiguiente.Text = "Siguiente";
-			btnSiguiente.UseVisualStyleBackColor = true;
+			btnSiguiente.UseVisualStyleBackColor = false;
 			btnSiguiente.Click += btnSiguiente_Click;
 			// 
 			// panel1
 			// 
+			panel1.BackColor = Color.DimGray;
 			panel1.Controls.Add(btnAnterior);
 			panel1.Controls.Add(btnSiguiente);
 			panel1.Controls.Add(btnCancelar);
@@ -151,6 +170,7 @@
 			AcceptButton = btnSiguiente;
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			CancelButton = btnCancelar;
 			ClientSize = new Size(830, 710);
 			Controls.Add(panel1);

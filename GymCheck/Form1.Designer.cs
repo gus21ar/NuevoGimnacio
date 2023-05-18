@@ -65,6 +65,7 @@
 			// menuPrincipal
 			// 
 			menuPrincipal.AllowItemReorder = true;
+			menuPrincipal.BackColor = Color.DarkGray;
 			menuPrincipal.Font = new Font("Georgia", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
 			menuPrincipal.ImeMode = ImeMode.On;
 			menuPrincipal.Items.AddRange(new ToolStripItem[] { clientesToolStripMenuItem, pagosToolStripMenuItem, asistenciasToolStripMenuItem, reportesToolStripMenuItem, configuracionesToolStripMenuItem, ayudaToolStripMenuItem, toolStripMenuItem1 });
@@ -74,10 +75,12 @@
 			menuPrincipal.Padding = new Padding(16, 5, 0, 5);
 			menuPrincipal.Size = new Size(984, 39);
 			menuPrincipal.TabIndex = 0;
+			menuPrincipal.Visible = false;
 			// 
 			// clientesToolStripMenuItem
 			// 
 			clientesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarToolStripMenuItem, modificarToolStripMenuItem, verToolStripMenuItem });
+			clientesToolStripMenuItem.ForeColor = Color.White;
 			clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
 			clientesToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.C;
 			clientesToolStripMenuItem.Size = new Size(97, 29);
@@ -85,6 +88,8 @@
 			// 
 			// agregarToolStripMenuItem
 			// 
+			agregarToolStripMenuItem.BackColor = Color.DarkGray;
+			agregarToolStripMenuItem.ForeColor = Color.White;
 			agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
 			agregarToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.A;
 			agregarToolStripMenuItem.Size = new Size(244, 30);
@@ -93,6 +98,8 @@
 			// 
 			// modificarToolStripMenuItem
 			// 
+			modificarToolStripMenuItem.BackColor = Color.DarkGray;
+			modificarToolStripMenuItem.ForeColor = Color.White;
 			modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
 			modificarToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.U;
 			modificarToolStripMenuItem.Size = new Size(244, 30);
@@ -101,6 +108,8 @@
 			// 
 			// verToolStripMenuItem
 			// 
+			verToolStripMenuItem.BackColor = Color.DarkGray;
+			verToolStripMenuItem.ForeColor = Color.White;
 			verToolStripMenuItem.Name = "verToolStripMenuItem";
 			verToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.V;
 			verToolStripMenuItem.Size = new Size(244, 30);
@@ -109,6 +118,7 @@
 			// pagosToolStripMenuItem
 			// 
 			pagosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nuevosToolStripMenuItem });
+			pagosToolStripMenuItem.ForeColor = Color.White;
 			pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
 			pagosToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.P;
 			pagosToolStripMenuItem.Size = new Size(79, 29);
@@ -116,6 +126,8 @@
 			// 
 			// nuevosToolStripMenuItem
 			// 
+			nuevosToolStripMenuItem.BackColor = Color.DarkGray;
+			nuevosToolStripMenuItem.ForeColor = Color.White;
 			nuevosToolStripMenuItem.Name = "nuevosToolStripMenuItem";
 			nuevosToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.N;
 			nuevosToolStripMenuItem.Size = new Size(221, 30);
@@ -125,6 +137,7 @@
 			// asistenciasToolStripMenuItem
 			// 
 			asistenciasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { semaforoToolStripMenuItem });
+			asistenciasToolStripMenuItem.ForeColor = Color.White;
 			asistenciasToolStripMenuItem.Name = "asistenciasToolStripMenuItem";
 			asistenciasToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.T;
 			asistenciasToolStripMenuItem.Size = new Size(127, 29);
@@ -132,6 +145,8 @@
 			// 
 			// semaforoToolStripMenuItem
 			// 
+			semaforoToolStripMenuItem.BackColor = Color.DarkGray;
+			semaforoToolStripMenuItem.ForeColor = Color.White;
 			semaforoToolStripMenuItem.Name = "semaforoToolStripMenuItem";
 			semaforoToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.S;
 			semaforoToolStripMenuItem.Size = new Size(239, 30);
@@ -141,12 +156,15 @@
 			// reportesToolStripMenuItem
 			// 
 			reportesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generarToolStripMenuItem });
+			reportesToolStripMenuItem.ForeColor = Color.White;
 			reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
 			reportesToolStripMenuItem.Size = new Size(107, 29);
 			reportesToolStripMenuItem.Text = "Reportes";
 			// 
 			// generarToolStripMenuItem
 			// 
+			generarToolStripMenuItem.BackColor = Color.DarkGray;
+			generarToolStripMenuItem.ForeColor = Color.White;
 			generarToolStripMenuItem.Name = "generarToolStripMenuItem";
 			generarToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.R;
 			generarToolStripMenuItem.Size = new Size(228, 30);
@@ -156,6 +174,7 @@
 			// configuracionesToolStripMenuItem
 			// 
 			configuracionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarRedesToolStripMenuItem, agregarMediosDePagoToolStripMenuItem, aplicacionToolStripMenuItem });
+			configuracionesToolStripMenuItem.ForeColor = Color.White;
 			configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
 			configuracionesToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F;
 			configuracionesToolStripMenuItem.Size = new Size(174, 29);
@@ -163,6 +182,8 @@
 			// 
 			// agregarRedesToolStripMenuItem
 			// 
+			agregarRedesToolStripMenuItem.BackColor = Color.DarkGray;
+			agregarRedesToolStripMenuItem.ForeColor = Color.White;
 			agregarRedesToolStripMenuItem.Name = "agregarRedesToolStripMenuItem";
 			agregarRedesToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.D;
 			agregarRedesToolStripMenuItem.Size = new Size(377, 30);
@@ -171,6 +192,8 @@
 			// 
 			// agregarMediosDePagoToolStripMenuItem
 			// 
+			agregarMediosDePagoToolStripMenuItem.BackColor = Color.DarkGray;
+			agregarMediosDePagoToolStripMenuItem.ForeColor = Color.White;
 			agregarMediosDePagoToolStripMenuItem.Name = "agregarMediosDePagoToolStripMenuItem";
 			agregarMediosDePagoToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.G;
 			agregarMediosDePagoToolStripMenuItem.Size = new Size(377, 30);
@@ -179,6 +202,8 @@
 			// 
 			// aplicacionToolStripMenuItem
 			// 
+			aplicacionToolStripMenuItem.BackColor = Color.DarkGray;
+			aplicacionToolStripMenuItem.ForeColor = Color.White;
 			aplicacionToolStripMenuItem.Name = "aplicacionToolStripMenuItem";
 			aplicacionToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.L;
 			aplicacionToolStripMenuItem.Size = new Size(377, 30);
@@ -188,6 +213,7 @@
 			// ayudaToolStripMenuItem
 			// 
 			ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { acercaDeToolStripMenuItem });
+			ayudaToolStripMenuItem.ForeColor = Color.White;
 			ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
 			ayudaToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.Y;
 			ayudaToolStripMenuItem.Size = new Size(83, 29);
@@ -195,6 +221,8 @@
 			// 
 			// acercaDeToolStripMenuItem
 			// 
+			acercaDeToolStripMenuItem.BackColor = Color.DarkGray;
+			acercaDeToolStripMenuItem.ForeColor = Color.White;
 			acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
 			acercaDeToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.B;
 			acercaDeToolStripMenuItem.Size = new Size(265, 30);
@@ -210,42 +238,49 @@
 			// 
 			// BtnClientes
 			// 
+			BtnClientes.BackColor = Color.IndianRed;
 			BtnClientes.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			BtnClientes.ForeColor = Color.White;
 			BtnClientes.Location = new Point(17, 68);
 			BtnClientes.Margin = new Padding(8);
 			BtnClientes.Name = "BtnClientes";
 			BtnClientes.Size = new Size(450, 380);
 			BtnClientes.TabIndex = 1;
 			BtnClientes.Text = "Cliente Nuevo";
-			BtnClientes.UseVisualStyleBackColor = true;
+			BtnClientes.UseVisualStyleBackColor = false;
 			BtnClientes.Click += agregarToolStripMenuItem_Click;
 			// 
 			// btnPagos
 			// 
+			btnPagos.BackColor = Color.IndianRed;
 			btnPagos.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			btnPagos.ForeColor = Color.White;
 			btnPagos.Location = new Point(17, 464);
 			btnPagos.Margin = new Padding(8);
 			btnPagos.Name = "btnPagos";
 			btnPagos.Size = new Size(450, 180);
 			btnPagos.TabIndex = 2;
 			btnPagos.Text = "Pagos";
-			btnPagos.UseVisualStyleBackColor = true;
+			btnPagos.UseVisualStyleBackColor = false;
 			btnPagos.Click += nuevosToolStripMenuItem_Click;
 			// 
 			// btnAsistencia
 			// 
+			btnAsistencia.BackColor = Color.IndianRed;
 			btnAsistencia.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			btnAsistencia.ForeColor = Color.White;
 			btnAsistencia.Location = new Point(517, 68);
 			btnAsistencia.Margin = new Padding(8);
 			btnAsistencia.Name = "btnAsistencia";
 			btnAsistencia.Size = new Size(450, 380);
 			btnAsistencia.TabIndex = 3;
 			btnAsistencia.Text = "Asistencia";
-			btnAsistencia.UseVisualStyleBackColor = true;
+			btnAsistencia.UseVisualStyleBackColor = false;
 			btnAsistencia.Click += semaforoToolStripMenuItem_Click;
 			// 
 			// panVerCliente
 			// 
+			panVerCliente.BackColor = Color.Gray;
 			panVerCliente.Controls.Add(btnListo);
 			panVerCliente.Controls.Add(lblResumen);
 			panVerCliente.Controls.Add(lblNombre);
@@ -303,20 +338,23 @@
 			// 
 			// btnReportes
 			// 
+			btnReportes.BackColor = Color.IndianRed;
 			btnReportes.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			btnReportes.ForeColor = Color.White;
 			btnReportes.Location = new Point(17, 664);
 			btnReportes.Margin = new Padding(8);
 			btnReportes.Name = "btnReportes";
 			btnReportes.Size = new Size(450, 180);
 			btnReportes.TabIndex = 5;
 			btnReportes.Text = "Reportes";
-			btnReportes.UseVisualStyleBackColor = true;
+			btnReportes.UseVisualStyleBackColor = false;
 			btnReportes.Click += btnReportes_Click;
 			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(984, 861);
 			Controls.Add(btnReportes);
 			Controls.Add(panVerCliente);

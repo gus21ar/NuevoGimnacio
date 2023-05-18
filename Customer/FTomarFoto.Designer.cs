@@ -90,28 +90,34 @@
 			// 
 			// btnCapture
 			// 
+			btnCapture.BackColor = Color.OliveDrab;
+			btnCapture.ForeColor = Color.White;
 			btnCapture.Location = new Point(650, 504);
 			btnCapture.Margin = new Padding(2);
 			btnCapture.Name = "btnCapture";
 			btnCapture.Size = new Size(160, 50);
 			btnCapture.TabIndex = 6;
 			btnCapture.Text = "Cápturar";
-			btnCapture.UseVisualStyleBackColor = true;
+			btnCapture.UseVisualStyleBackColor = false;
 			btnCapture.Click += btnCapture_Click;
 			// 
 			// btnIniciarCamara
 			// 
+			btnIniciarCamara.BackColor = Color.SteelBlue;
+			btnIniciarCamara.ForeColor = Color.White;
 			btnIniciarCamara.Location = new Point(6, 504);
 			btnIniciarCamara.Margin = new Padding(2);
 			btnIniciarCamara.Name = "btnIniciarCamara";
 			btnIniciarCamara.Size = new Size(240, 50);
 			btnIniciarCamara.TabIndex = 7;
 			btnIniciarCamara.Text = "Iniciar Cámara";
-			btnIniciarCamara.UseVisualStyleBackColor = true;
+			btnIniciarCamara.UseVisualStyleBackColor = false;
 			btnIniciarCamara.Click += btnIniciarCamara_Click;
 			// 
 			// cmbCamaras
 			// 
+			cmbCamaras.BackColor = Color.DarkGray;
+			cmbCamaras.ForeColor = Color.White;
 			cmbCamaras.FormattingEnabled = true;
 			cmbCamaras.Location = new Point(6, 431);
 			cmbCamaras.Margin = new Padding(2);
@@ -134,6 +140,7 @@
 			AcceptButton = btnSiguiente;
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			CancelButton = btnCancelar;
 			ClientSize = new Size(830, 710);
 			Controls.Add(panel1);

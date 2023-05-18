@@ -52,6 +52,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(20, 21);
 			label1.Name = "label1";
 			label1.Size = new Size(163, 38);
@@ -61,6 +62,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.ForeColor = Color.White;
 			label2.Location = new Point(20, 83);
 			label2.Name = "label2";
 			label2.Size = new Size(149, 38);
@@ -70,6 +72,7 @@
 			// label3
 			// 
 			label3.AutoSize = true;
+			label3.ForeColor = Color.White;
 			label3.Location = new Point(20, 148);
 			label3.Name = "label3";
 			label3.Size = new Size(91, 38);
@@ -102,6 +105,8 @@
 			// 
 			// txtDireccion
 			// 
+			txtDireccion.BackColor = Color.DarkGray;
+			txtDireccion.ForeColor = Color.White;
 			txtDireccion.Location = new Point(189, 21);
 			txtDireccion.Name = "txtDireccion";
 			txtDireccion.Size = new Size(391, 44);
@@ -109,6 +114,8 @@
 			// 
 			// txtTelefono
 			// 
+			txtTelefono.BackColor = Color.DarkGray;
+			txtTelefono.ForeColor = Color.White;
 			txtTelefono.Location = new Point(189, 83);
 			txtTelefono.Name = "txtTelefono";
 			txtTelefono.Size = new Size(391, 44);
@@ -116,6 +123,8 @@
 			// 
 			// txtMail
 			// 
+			txtMail.BackColor = Color.DarkGray;
+			txtMail.ForeColor = Color.White;
 			txtMail.Location = new Point(189, 148);
 			txtMail.Name = "txtMail";
 			txtMail.Size = new Size(391, 44);
@@ -146,7 +155,7 @@
 			// 
 			// panel2
 			// 
-			panel2.BackColor = SystemColors.Control;
+			panel2.BackColor = Color.DimGray;
 			panel2.Controls.Add(label1);
 			panel2.Controls.Add(panel1);
 			panel2.Controls.Add(label2);
@@ -161,7 +170,7 @@
 			// 
 			// panel3
 			// 
-			panel3.BackColor = SystemColors.Window;
+			panel3.BackColor = Color.Gray;
 			panel3.Controls.Add(panel4);
 			panel3.Location = new Point(10, 10);
 			panel3.Name = "panel3";
@@ -170,7 +179,7 @@
 			// 
 			// panel4
 			// 
-			panel4.BackColor = SystemColors.ActiveCaptionText;
+			panel4.BackColor = Color.DarkGray;
 			panel4.Controls.Add(panel5);
 			panel4.Location = new Point(10, 10);
 			panel4.Name = "panel4";
@@ -179,7 +188,7 @@
 			// 
 			// panel5
 			// 
-			panel5.BackColor = SystemColors.ControlDarkDark;
+			panel5.BackColor = Color.Silver;
 			panel5.Controls.Add(panel2);
 			panel5.Location = new Point(10, 10);
 			panel5.Name = "panel5";
@@ -190,7 +199,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = SystemColors.ActiveCaptionText;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(830, 710);
 			Controls.Add(panel3);
 			Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);

@@ -89,18 +89,21 @@
 			// 
 			// btnCerrar
 			// 
+			btnCerrar.BackColor = Color.Firebrick;
+			btnCerrar.ForeColor = Color.White;
 			btnCerrar.Location = new Point(589, 8);
 			btnCerrar.Name = "btnCerrar";
 			btnCerrar.Size = new Size(133, 56);
 			btnCerrar.TabIndex = 0;
 			btnCerrar.Text = "Cerrar";
-			btnCerrar.UseVisualStyleBackColor = true;
+			btnCerrar.UseVisualStyleBackColor = false;
 			btnCerrar.Click += btnCerrar_Click;
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
 			label1.Font = new Font("Georgia", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(122, 21);
 			label1.Name = "label1";
 			label1.Size = new Size(462, 43);
@@ -110,6 +113,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.ForeColor = Color.White;
 			label2.Location = new Point(12, 82);
 			label2.Name = "label2";
 			label2.Size = new Size(199, 38);
@@ -118,6 +122,8 @@
 			// 
 			// txtDniAbuscar
 			// 
+			txtDniAbuscar.BackColor = Color.DarkGray;
+			txtDniAbuscar.ForeColor = Color.White;
 			txtDniAbuscar.Location = new Point(217, 82);
 			txtDniAbuscar.Name = "txtDniAbuscar";
 			txtDniAbuscar.Size = new Size(320, 44);
@@ -128,12 +134,14 @@
 			// 
 			// btnBuscar
 			// 
+			btnBuscar.BackColor = Color.SteelBlue;
+			btnBuscar.ForeColor = Color.White;
 			btnBuscar.Location = new Point(563, 75);
 			btnBuscar.Name = "btnBuscar";
 			btnBuscar.Size = new Size(159, 52);
 			btnBuscar.TabIndex = 4;
 			btnBuscar.Text = "Buscar";
-			btnBuscar.UseVisualStyleBackColor = true;
+			btnBuscar.UseVisualStyleBackColor = false;
 			btnBuscar.Click += btnBuscar_Click;
 			// 
 			// tbcCliente
@@ -153,6 +161,7 @@
 			// 
 			// tbpDatos
 			// 
+			tbpDatos.BackColor = Color.Gray;
 			tbpDatos.Controls.Add(label12);
 			tbpDatos.Controls.Add(txtDni);
 			tbpDatos.Controls.Add(txtApellido);
@@ -160,21 +169,22 @@
 			tbpDatos.Controls.Add(label5);
 			tbpDatos.Controls.Add(label4);
 			tbpDatos.Controls.Add(label3);
+			tbpDatos.ForeColor = Color.White;
 			tbpDatos.Location = new Point(4, 47);
 			tbpDatos.Name = "tbpDatos";
 			tbpDatos.Padding = new Padding(3);
 			tbpDatos.Size = new Size(702, 469);
 			tbpDatos.TabIndex = 0;
 			tbpDatos.Text = "Datos";
-			tbpDatos.UseVisualStyleBackColor = true;
 			tbpDatos.Enter += tbpDatos_Enter;
 			// 
 			// label12
 			// 
 			label12.AutoSize = true;
+			label12.BackColor = Color.White;
 			label12.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label12.ForeColor = Color.Firebrick;
-			label12.Location = new Point(11, 209);
+			label12.Location = new Point(11, 228);
 			label12.Name = "label12";
 			label12.Size = new Size(513, 18);
 			label12.TabIndex = 6;
@@ -182,6 +192,8 @@
 			// 
 			// txtDni
 			// 
+			txtDni.BackColor = Color.DarkGray;
+			txtDni.ForeColor = Color.White;
 			txtDni.Location = new Point(160, 162);
 			txtDni.Name = "txtDni";
 			txtDni.Size = new Size(307, 44);
@@ -191,6 +203,8 @@
 			// 
 			// txtApellido
 			// 
+			txtApellido.BackColor = Color.DarkGray;
+			txtApellido.ForeColor = Color.White;
 			txtApellido.Location = new Point(160, 104);
 			txtApellido.Name = "txtApellido";
 			txtApellido.Size = new Size(307, 44);
@@ -199,6 +213,8 @@
 			// 
 			// txtNombre
 			// 
+			txtNombre.BackColor = Color.DarkGray;
+			txtNombre.ForeColor = Color.White;
 			txtNombre.Location = new Point(160, 39);
 			txtNombre.Name = "txtNombre";
 			txtNombre.Size = new Size(307, 44);
@@ -234,22 +250,25 @@
 			// 
 			// tbpContacto
 			// 
+			tbpContacto.BackColor = Color.Gray;
 			tbpContacto.Controls.Add(txtMail);
 			tbpContacto.Controls.Add(txtTelefono);
 			tbpContacto.Controls.Add(txtDireccion);
 			tbpContacto.Controls.Add(label6);
 			tbpContacto.Controls.Add(label7);
 			tbpContacto.Controls.Add(label8);
-			tbpContacto.Location = new Point(4, 24);
+			tbpContacto.ForeColor = Color.White;
+			tbpContacto.Location = new Point(4, 47);
 			tbpContacto.Name = "tbpContacto";
 			tbpContacto.Padding = new Padding(3);
-			tbpContacto.Size = new Size(702, 492);
+			tbpContacto.Size = new Size(702, 469);
 			tbpContacto.TabIndex = 1;
 			tbpContacto.Text = "Contacto";
-			tbpContacto.UseVisualStyleBackColor = true;
 			// 
 			// txtMail
 			// 
+			txtMail.BackColor = Color.DarkGray;
+			txtMail.ForeColor = Color.White;
 			txtMail.Location = new Point(189, 166);
 			txtMail.Name = "txtMail";
 			txtMail.Size = new Size(307, 44);
@@ -257,6 +276,8 @@
 			// 
 			// txtTelefono
 			// 
+			txtTelefono.BackColor = Color.DarkGray;
+			txtTelefono.ForeColor = Color.White;
 			txtTelefono.Location = new Point(189, 108);
 			txtTelefono.Name = "txtTelefono";
 			txtTelefono.Size = new Size(307, 44);
@@ -264,6 +285,8 @@
 			// 
 			// txtDireccion
 			// 
+			txtDireccion.BackColor = Color.DarkGray;
+			txtDireccion.ForeColor = Color.White;
 			txtDireccion.Location = new Point(189, 43);
 			txtDireccion.Name = "txtDireccion";
 			txtDireccion.Size = new Size(307, 44);
@@ -298,22 +321,23 @@
 			// 
 			// tbpFechas
 			// 
+			tbpFechas.BackColor = Color.Gray;
 			tbpFechas.Controls.Add(label10);
 			tbpFechas.Controls.Add(label9);
 			tbpFechas.Controls.Add(dtpInscripcion);
 			tbpFechas.Controls.Add(dtpNacimiento);
-			tbpFechas.Location = new Point(4, 24);
+			tbpFechas.Location = new Point(4, 47);
 			tbpFechas.Name = "tbpFechas";
 			tbpFechas.Padding = new Padding(3);
-			tbpFechas.Size = new Size(702, 492);
+			tbpFechas.Size = new Size(702, 469);
 			tbpFechas.TabIndex = 2;
 			tbpFechas.Text = "Fechas";
-			tbpFechas.UseVisualStyleBackColor = true;
 			tbpFechas.Enter += tbpDatos_Enter;
 			// 
 			// label10
 			// 
 			label10.AutoSize = true;
+			label10.ForeColor = Color.White;
 			label10.Location = new Point(11, 154);
 			label10.Name = "label10";
 			label10.Size = new Size(307, 38);
@@ -323,6 +347,7 @@
 			// label9
 			// 
 			label9.AutoSize = true;
+			label9.ForeColor = Color.White;
 			label9.Location = new Point(11, 80);
 			label9.Name = "label9";
 			label9.Size = new Size(314, 38);
@@ -347,53 +372,61 @@
 			// 
 			// tbpFoto
 			// 
+			tbpFoto.BackColor = Color.Gray;
 			tbpFoto.Controls.Add(btnGuardarFoto);
 			tbpFoto.Controls.Add(btnCapturarFoto);
 			tbpFoto.Controls.Add(btnIniciarCamara);
 			tbpFoto.Controls.Add(cmbCamaras);
 			tbpFoto.Controls.Add(pbFoto);
 			tbpFoto.Controls.Add(pbCamara);
-			tbpFoto.Location = new Point(4, 24);
+			tbpFoto.Location = new Point(4, 47);
 			tbpFoto.Name = "tbpFoto";
 			tbpFoto.Padding = new Padding(3);
-			tbpFoto.Size = new Size(702, 492);
+			tbpFoto.Size = new Size(702, 469);
 			tbpFoto.TabIndex = 3;
 			tbpFoto.Text = "Foto";
-			tbpFoto.UseVisualStyleBackColor = true;
 			tbpFoto.Enter += tbpFoto_Enter;
 			// 
 			// btnGuardarFoto
 			// 
+			btnGuardarFoto.BackColor = Color.OliveDrab;
+			btnGuardarFoto.ForeColor = Color.White;
 			btnGuardarFoto.Location = new Point(353, 404);
 			btnGuardarFoto.Name = "btnGuardarFoto";
 			btnGuardarFoto.Size = new Size(328, 56);
 			btnGuardarFoto.TabIndex = 5;
 			btnGuardarFoto.Text = "Guardar Foto";
-			btnGuardarFoto.UseVisualStyleBackColor = true;
+			btnGuardarFoto.UseVisualStyleBackColor = false;
 			btnGuardarFoto.Click += btnGuardarFoto_Click;
 			// 
 			// btnCapturarFoto
 			// 
+			btnCapturarFoto.BackColor = Color.SteelBlue;
+			btnCapturarFoto.ForeColor = Color.White;
 			btnCapturarFoto.Location = new Point(353, 342);
 			btnCapturarFoto.Name = "btnCapturarFoto";
 			btnCapturarFoto.Size = new Size(328, 56);
 			btnCapturarFoto.TabIndex = 4;
 			btnCapturarFoto.Text = "Cápturar";
-			btnCapturarFoto.UseVisualStyleBackColor = true;
+			btnCapturarFoto.UseVisualStyleBackColor = false;
 			btnCapturarFoto.Click += btnCapturarFoto_Click;
 			// 
 			// btnIniciarCamara
 			// 
+			btnIniciarCamara.BackColor = Color.SteelBlue;
+			btnIniciarCamara.ForeColor = Color.White;
 			btnIniciarCamara.Location = new Point(6, 404);
 			btnIniciarCamara.Name = "btnIniciarCamara";
 			btnIniciarCamara.Size = new Size(328, 56);
 			btnIniciarCamara.TabIndex = 3;
 			btnIniciarCamara.Text = "Iniciar Cámara";
-			btnIniciarCamara.UseVisualStyleBackColor = true;
+			btnIniciarCamara.UseVisualStyleBackColor = false;
 			btnIniciarCamara.Click += btnIniciarCamara_Click;
 			// 
 			// cmbCamaras
 			// 
+			cmbCamaras.BackColor = Color.DarkGray;
+			cmbCamaras.ForeColor = Color.White;
 			cmbCamaras.FormattingEnabled = true;
 			cmbCamaras.Location = new Point(11, 342);
 			cmbCamaras.Name = "cmbCamaras";
@@ -420,6 +453,7 @@
 			// 
 			// tbpRedes
 			// 
+			tbpRedes.BackColor = Color.Gray;
 			tbpRedes.Controls.Add(btnQuitarRedSocial);
 			tbpRedes.Controls.Add(ltbUsuariosRedes);
 			tbpRedes.Controls.Add(btnAgregarRedSocial);
@@ -427,27 +461,30 @@
 			tbpRedes.Controls.Add(label14);
 			tbpRedes.Controls.Add(label13);
 			tbpRedes.Controls.Add(cmbRedesSociales);
-			tbpRedes.Location = new Point(4, 24);
+			tbpRedes.Location = new Point(4, 47);
 			tbpRedes.Name = "tbpRedes";
 			tbpRedes.Padding = new Padding(3);
-			tbpRedes.Size = new Size(702, 492);
+			tbpRedes.Size = new Size(702, 469);
 			tbpRedes.TabIndex = 4;
 			tbpRedes.Text = "Redes";
-			tbpRedes.UseVisualStyleBackColor = true;
 			tbpRedes.Enter += tbpRedes_Enter;
 			// 
 			// btnQuitarRedSocial
 			// 
+			btnQuitarRedSocial.BackColor = Color.IndianRed;
+			btnQuitarRedSocial.ForeColor = Color.White;
 			btnQuitarRedSocial.Location = new Point(498, 126);
 			btnQuitarRedSocial.Name = "btnQuitarRedSocial";
 			btnQuitarRedSocial.Size = new Size(137, 96);
 			btnQuitarRedSocial.TabIndex = 7;
 			btnQuitarRedSocial.Text = "Quitar";
-			btnQuitarRedSocial.UseVisualStyleBackColor = true;
+			btnQuitarRedSocial.UseVisualStyleBackColor = false;
 			btnQuitarRedSocial.Click += btnQuitarRedSocial_Click;
 			// 
 			// ltbUsuariosRedes
 			// 
+			ltbUsuariosRedes.BackColor = Color.DarkGray;
+			ltbUsuariosRedes.ForeColor = Color.White;
 			ltbUsuariosRedes.FormattingEnabled = true;
 			ltbUsuariosRedes.ItemHeight = 38;
 			ltbUsuariosRedes.Location = new Point(15, 102);
@@ -457,16 +494,20 @@
 			// 
 			// btnAgregarRedSocial
 			// 
+			btnAgregarRedSocial.BackColor = Color.OliveDrab;
+			btnAgregarRedSocial.ForeColor = Color.White;
 			btnAgregarRedSocial.Location = new Point(498, 3);
 			btnAgregarRedSocial.Name = "btnAgregarRedSocial";
 			btnAgregarRedSocial.Size = new Size(137, 96);
 			btnAgregarRedSocial.TabIndex = 5;
 			btnAgregarRedSocial.Text = "Agregar";
-			btnAgregarRedSocial.UseVisualStyleBackColor = true;
+			btnAgregarRedSocial.UseVisualStyleBackColor = false;
 			btnAgregarRedSocial.Click += btnAgregarRedSocial_Click;
 			// 
 			// txtUsuario
 			// 
+			txtUsuario.BackColor = Color.DarkGray;
+			txtUsuario.ForeColor = Color.White;
 			txtUsuario.Location = new Point(176, 55);
 			txtUsuario.Name = "txtUsuario";
 			txtUsuario.Size = new Size(316, 44);
@@ -476,6 +517,7 @@
 			// label14
 			// 
 			label14.AutoSize = true;
+			label14.ForeColor = Color.White;
 			label14.Location = new Point(6, 61);
 			label14.Name = "label14";
 			label14.Size = new Size(129, 38);
@@ -485,6 +527,7 @@
 			// label13
 			// 
 			label13.AutoSize = true;
+			label13.ForeColor = Color.White;
 			label13.Location = new Point(6, 9);
 			label13.Name = "label13";
 			label13.Size = new Size(164, 38);
@@ -493,6 +536,8 @@
 			// 
 			// cmbRedesSociales
 			// 
+			cmbRedesSociales.BackColor = Color.DarkGray;
+			cmbRedesSociales.ForeColor = Color.White;
 			cmbRedesSociales.FormattingEnabled = true;
 			cmbRedesSociales.Location = new Point(176, 3);
 			cmbRedesSociales.Name = "cmbRedesSociales";
@@ -501,15 +546,16 @@
 			// 
 			// tbpOtros
 			// 
+			tbpOtros.BackColor = Color.Gray;
 			tbpOtros.Controls.Add(label11);
 			tbpOtros.Controls.Add(txtComentario);
-			tbpOtros.Location = new Point(4, 24);
+			tbpOtros.ForeColor = Color.White;
+			tbpOtros.Location = new Point(4, 47);
 			tbpOtros.Name = "tbpOtros";
 			tbpOtros.Padding = new Padding(3);
-			tbpOtros.Size = new Size(702, 492);
+			tbpOtros.Size = new Size(702, 469);
 			tbpOtros.TabIndex = 5;
 			tbpOtros.Text = "Otros";
-			tbpOtros.UseVisualStyleBackColor = true;
 			tbpOtros.Enter += tbpDatos_Enter;
 			// 
 			// label11
@@ -523,6 +569,8 @@
 			// 
 			// txtComentario
 			// 
+			txtComentario.BackColor = Color.DarkGray;
+			txtComentario.ForeColor = Color.White;
 			txtComentario.Location = new Point(30, 70);
 			txtComentario.Multiline = true;
 			txtComentario.Name = "txtComentario";
@@ -539,18 +587,21 @@
 			// 
 			// btnAceptar
 			// 
+			btnAceptar.BackColor = Color.OliveDrab;
+			btnAceptar.ForeColor = Color.White;
 			btnAceptar.Location = new Point(3, 3);
 			btnAceptar.Name = "btnAceptar";
 			btnAceptar.Size = new Size(703, 94);
 			btnAceptar.TabIndex = 0;
 			btnAceptar.Text = "Aplicar Cambios";
-			btnAceptar.UseVisualStyleBackColor = true;
+			btnAceptar.UseVisualStyleBackColor = false;
 			btnAceptar.Click += btnAceptar_Click;
 			// 
 			// lblInfo
 			// 
 			lblInfo.AutoSize = true;
 			lblInfo.Font = new Font("Georgia", 18F, FontStyle.Regular, GraphicsUnit.Point);
+			lblInfo.ForeColor = Color.Khaki;
 			lblInfo.Location = new Point(15, 705);
 			lblInfo.Name = "lblInfo";
 			lblInfo.Size = new Size(625, 29);
@@ -561,6 +612,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(738, 861);
 			Controls.Add(lblInfo);
 			Controls.Add(pnlAceptar);

@@ -59,7 +59,9 @@
 			// 
 			// txtNombre
 			// 
+			txtNombre.BackColor = Color.DarkGray;
 			txtNombre.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			txtNombre.ForeColor = Color.White;
 			txtNombre.Location = new Point(176, 110);
 			txtNombre.Margin = new Padding(8);
 			txtNombre.Name = "txtNombre";
@@ -69,6 +71,7 @@
 			// 
 			// btnAgregar
 			// 
+			btnAgregar.BackColor = Color.OliveDrab;
 			btnAgregar.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			btnAgregar.Location = new Point(17, 192);
 			btnAgregar.Margin = new Padding(8);
@@ -76,17 +79,18 @@
 			btnAgregar.Size = new Size(746, 164);
 			btnAgregar.TabIndex = 1;
 			btnAgregar.Text = "Agregar";
-			btnAgregar.UseVisualStyleBackColor = true;
+			btnAgregar.UseVisualStyleBackColor = false;
 			btnAgregar.Click += btnAgregar_Click;
 			// 
 			// btnCerrar
 			// 
+			btnCerrar.BackColor = Color.Firebrick;
 			btnCerrar.Location = new Point(594, 12);
 			btnCerrar.Name = "btnCerrar";
 			btnCerrar.Size = new Size(169, 69);
 			btnCerrar.TabIndex = 2;
 			btnCerrar.Text = "Cerrar";
-			btnCerrar.UseVisualStyleBackColor = true;
+			btnCerrar.UseVisualStyleBackColor = false;
 			btnCerrar.Click += btnCerrar_Click;
 			// 
 			// FRedesAdd
@@ -94,6 +98,7 @@
 			AcceptButton = btnAgregar;
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			CancelButton = btnCerrar;
 			ClientSize = new Size(784, 391);
 			Controls.Add(btnCerrar);
@@ -101,6 +106,7 @@
 			Controls.Add(txtNombre);
 			Controls.Add(label2);
 			Controls.Add(label1);
+			ForeColor = Color.White;
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FRedesAdd";

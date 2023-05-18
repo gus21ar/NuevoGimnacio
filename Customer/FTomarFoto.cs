@@ -64,7 +64,7 @@ namespace Customer
 			}
 			fotoTomada = true;
 		}
-	
+
 		private void Salir()
 		{
 			CerrarWebCam();

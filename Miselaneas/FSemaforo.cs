@@ -50,7 +50,7 @@ namespace Miselaneas
 					acceso.NombreCompleto = oClienteRepo.ObtenerNombreCompleto(oClienteRepo.ObtenerIdCliente(Convert.ToInt32(txtDni.Text)));
 					acceso.Dni = txtDni.Text;
 					acceso.Mensaje = "Cliente Habilitado para el ingreso";
-					acceso.Semaforo = Color.Green;
+					acceso.Semaforo = Color.OliveDrab;
 					CPublicador.Instancia.Notificar(acceso);
 
 				}
@@ -90,7 +90,7 @@ namespace Miselaneas
 					acceso.NombreCompleto = oClienteRepo.ObtenerNombreCompleto(oClienteRepo.ObtenerIdCliente(Convert.ToInt32(txtDni.Text)));
 					acceso.Dni = txtDni.Text;
 					acceso.Mensaje = "Cliente no habilitado para el ingreso";
-					acceso.Semaforo = Color.Red;
+					acceso.Semaforo = Color.Firebrick;
 					CPublicador.Instancia.Notificar(acceso);
 				}
 			}
@@ -103,7 +103,7 @@ namespace Miselaneas
 				acceso.NombreCompleto = "Cliente no registrado";
 				acceso.Dni = "0";
 				acceso.Mensaje = "Registrar Cliente por Favor";
-				acceso.Semaforo = Color.Red;
+				acceso.Semaforo = Color.Firebrick;
 				CPublicador.Instancia.Notificar(acceso);
 			}
 		}
@@ -135,7 +135,7 @@ namespace Miselaneas
 			switch (indice)
 			{
 				case 1:
-					pnlVerde.BackColor = Color.Green;
+					pnlVerde.BackColor = Color.OliveDrab;
 					lblVerde.Visible = true;
 					break;
 				case 2:
@@ -143,7 +143,7 @@ namespace Miselaneas
 					lblAmarillo.Visible = true;
 					break;
 				case 3:
-					pnlRojo.BackColor = Color.Red;
+					pnlRojo.BackColor = Color.Firebrick;
 					lblRojo.Visible = true;
 					break;
 				default:

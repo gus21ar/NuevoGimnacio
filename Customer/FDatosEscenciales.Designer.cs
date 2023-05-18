@@ -67,6 +67,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(15, 15);
 			label1.Name = "label1";
 			label1.Size = new Size(133, 38);
@@ -75,6 +76,8 @@
 			// 
 			// txtNombre
 			// 
+			txtNombre.BackColor = Color.DarkGray;
+			txtNombre.ForeColor = Color.White;
 			txtNombre.Location = new Point(177, 12);
 			txtNombre.Name = "txtNombre";
 			txtNombre.Size = new Size(398, 44);
@@ -83,6 +86,8 @@
 			// 
 			// txtApellido
 			// 
+			txtApellido.BackColor = Color.DarkGray;
+			txtApellido.ForeColor = Color.White;
 			txtApellido.Location = new Point(177, 94);
 			txtApellido.Name = "txtApellido";
 			txtApellido.Size = new Size(398, 44);
@@ -92,6 +97,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.ForeColor = Color.White;
 			label2.Location = new Point(15, 97);
 			label2.Name = "label2";
 			label2.Size = new Size(133, 38);
@@ -100,6 +106,8 @@
 			// 
 			// txtDni
 			// 
+			txtDni.BackColor = Color.DarkGray;
+			txtDni.ForeColor = Color.White;
 			txtDni.Location = new Point(177, 170);
 			txtDni.Name = "txtDni";
 			txtDni.Size = new Size(398, 44);
@@ -110,6 +118,7 @@
 			// label3
 			// 
 			label3.AutoSize = true;
+			label3.ForeColor = Color.White;
 			label3.Location = new Point(15, 173);
 			label3.Name = "label3";
 			label3.Size = new Size(78, 38);
@@ -153,7 +162,7 @@
 			// 
 			// panel2
 			// 
-			panel2.BackColor = SystemColors.Control;
+			panel2.BackColor = Color.DimGray;
 			panel2.Controls.Add(label1);
 			panel2.Controls.Add(panel1);
 			panel2.Controls.Add(txtNombre);
@@ -168,7 +177,7 @@
 			// 
 			// panel3
 			// 
-			panel3.BackColor = SystemColors.ControlDarkDark;
+			panel3.BackColor = Color.Gray;
 			panel3.Controls.Add(panel4);
 			panel3.Location = new Point(10, 10);
 			panel3.Name = "panel3";
@@ -177,7 +186,7 @@
 			// 
 			// panel4
 			// 
-			panel4.BackColor = SystemColors.ActiveCaptionText;
+			panel4.BackColor = Color.DarkGray;
 			panel4.Controls.Add(panel5);
 			panel4.Location = new Point(10, 10);
 			panel4.Name = "panel4";
@@ -186,7 +195,7 @@
 			// 
 			// panel5
 			// 
-			panel5.BackColor = SystemColors.Menu;
+			panel5.BackColor = Color.Silver;
 			panel5.Controls.Add(panel6);
 			panel5.Location = new Point(10, 10);
 			panel5.Name = "panel5";
@@ -195,7 +204,7 @@
 			// 
 			// panel6
 			// 
-			panel6.BackColor = SystemColors.ControlDark;
+			panel6.BackColor = Color.LightGray;
 			panel6.Controls.Add(panel2);
 			panel6.Location = new Point(10, 10);
 			panel6.Name = "panel6";
@@ -207,7 +216,7 @@
 			AcceptButton = btnSiguiente;
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = SystemColors.ActiveCaptionText;
+			BackColor = Color.DimGray;
 			CancelButton = btnCancelar;
 			ClientSize = new Size(830, 710);
 			Controls.Add(panel3);

@@ -45,6 +45,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.ForeColor = Color.White;
 			label1.Location = new Point(191, 90);
 			label1.Name = "label1";
 			label1.Size = new Size(388, 38);
@@ -53,23 +54,28 @@
 			// 
 			// txtDni
 			// 
+			txtDni.BackColor = Color.DarkGray;
+			txtDni.ForeColor = Color.White;
 			txtDni.Location = new Point(83, 158);
 			txtDni.Name = "txtDni";
 			txtDni.Size = new Size(305, 44);
 			txtDni.TabIndex = 1;
+			txtDni.TextAlign = HorizontalAlignment.Center;
 			txtDni.TextChanged += txtDni_TextChanged;
 			txtDni.Enter += txtDni_Enter;
 			txtDni.KeyPress += txtDni_KeyPress;
 			// 
 			// btnIngresar
 			// 
+			btnIngresar.BackColor = Color.OliveDrab;
 			btnIngresar.Enabled = false;
+			btnIngresar.ForeColor = Color.White;
 			btnIngresar.Location = new Point(420, 151);
 			btnIngresar.Name = "btnIngresar";
 			btnIngresar.Size = new Size(269, 51);
 			btnIngresar.TabIndex = 2;
 			btnIngresar.Text = "Ingresar";
-			btnIngresar.UseVisualStyleBackColor = true;
+			btnIngresar.UseVisualStyleBackColor = false;
 			btnIngresar.Click += btnIngresar_Click;
 			// 
 			// pnlVerde
@@ -130,6 +136,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			ClientSize = new Size(814, 671);
 			Controls.Add(pnlRojo);
 			Controls.Add(pnlAmarillo);

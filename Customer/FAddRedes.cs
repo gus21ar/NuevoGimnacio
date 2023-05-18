@@ -7,7 +7,7 @@ namespace Customer
 	public partial class FAddRedes : Form
 	{
 		List<IUsuariosRedes> listaredes;
-		CRedesRepo redesRepo; 
+		CRedesRepo redesRepo;
 		public FAddRedes()
 		{
 			InitializeComponent();

@@ -55,10 +55,13 @@
 			// 
 			// txtDni
 			// 
+			txtDni.BackColor = Color.DarkGray;
+			txtDni.ForeColor = Color.White;
 			txtDni.Location = new Point(120, 13);
 			txtDni.Name = "txtDni";
 			txtDni.Size = new Size(348, 44);
 			txtDni.TabIndex = 1;
+			txtDni.TextAlign = HorizontalAlignment.Center;
 			txtDni.TextChanged += txtDni_TextChanged;
 			txtDni.KeyPress += txtDni_KeyPress;
 			// 
@@ -73,10 +76,13 @@
 			// 
 			// txtMonto
 			// 
+			txtMonto.BackColor = Color.DarkGray;
+			txtMonto.ForeColor = Color.White;
 			txtMonto.Location = new Point(111, 33);
 			txtMonto.Name = "txtMonto";
 			txtMonto.Size = new Size(344, 44);
 			txtMonto.TabIndex = 3;
+			txtMonto.TextAlign = HorizontalAlignment.Center;
 			txtMonto.TextChanged += txtMonto_TextChanged;
 			// 
 			// label3
@@ -90,6 +96,8 @@
 			// 
 			// cmbMedios
 			// 
+			cmbMedios.BackColor = Color.DarkGray;
+			cmbMedios.ForeColor = Color.White;
 			cmbMedios.FormattingEnabled = true;
 			cmbMedios.Location = new Point(111, 83);
 			cmbMedios.Name = "cmbMedios";
@@ -107,13 +115,14 @@
 			// 
 			// btnBuscar
 			// 
+			btnBuscar.BackColor = Color.SteelBlue;
 			btnBuscar.Enabled = false;
 			btnBuscar.Location = new Point(480, 6);
 			btnBuscar.Name = "btnBuscar";
 			btnBuscar.Size = new Size(130, 51);
 			btnBuscar.TabIndex = 7;
 			btnBuscar.Text = "buscar";
-			btnBuscar.UseVisualStyleBackColor = true;
+			btnBuscar.UseVisualStyleBackColor = false;
 			btnBuscar.Click += btnBuscar_Click;
 			// 
 			// panPago
@@ -130,23 +139,25 @@
 			// 
 			// btnPagar
 			// 
+			btnPagar.BackColor = Color.OliveDrab;
 			btnPagar.Enabled = false;
 			btnPagar.Location = new Point(104, 150);
 			btnPagar.Name = "btnPagar";
 			btnPagar.Size = new Size(348, 67);
 			btnPagar.TabIndex = 6;
 			btnPagar.Text = "Pagar";
-			btnPagar.UseVisualStyleBackColor = true;
+			btnPagar.UseVisualStyleBackColor = false;
 			btnPagar.Click += btnPagar_Click;
 			// 
 			// btnCancelar
 			// 
+			btnCancelar.BackColor = Color.Firebrick;
 			btnCancelar.Location = new Point(127, 488);
 			btnCancelar.Name = "btnCancelar";
 			btnCancelar.Size = new Size(341, 61);
 			btnCancelar.TabIndex = 9;
 			btnCancelar.Text = "Cancelar";
-			btnCancelar.UseVisualStyleBackColor = true;
+			btnCancelar.UseVisualStyleBackColor = false;
 			btnCancelar.Click += btnCancelar_Click;
 			// 
 			// panGeneral
@@ -164,6 +175,7 @@
 			AcceptButton = btnPagar;
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.DimGray;
 			CancelButton = btnCancelar;
 			ClientSize = new Size(659, 561);
 			Controls.Add(panGeneral);
@@ -171,7 +183,7 @@
 			Controls.Add(btnBuscar);
 			Controls.Add(txtDni);
 			Controls.Add(label1);
-			Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			ForeColor = Color.White;
 			FormBorderStyle = FormBorderStyle.FixedSingle;
 			Margin = new Padding(7, 8, 7, 8);
 			Name = "FPagosRegistro";

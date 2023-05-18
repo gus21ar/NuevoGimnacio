@@ -17,7 +17,7 @@ namespace Miselaneas
 		{
 			if (txtNombre.Text == "")
 			{
-				Mensaje.Mostrar("Faltan datos","El campo nombre debe estar completo",TipoMensaje.Advertencia);
+				Mensaje.Mostrar("Faltan datos", "El campo nombre debe estar completo", TipoMensaje.Advertencia);
 				return;
 			}
 			try
@@ -35,7 +35,7 @@ namespace Miselaneas
 			}
 			catch (Exception ex)
 			{
-				Mensaje.Mostrar("Ups",ex.Message,TipoMensaje.Error);
+				Mensaje.Mostrar("Ups", ex.Message, TipoMensaje.Error);
 			}
 		}
 

@@ -95,7 +95,7 @@ namespace Miselaneas
 				}
 				CControlPdf.CrearPdf(titulo, parrafo, PagoPdfList, archivo);
 			}
-			Mensaje.Mostrar("Exito","El archivo se guardó correctamente",TipoMensaje.Informacion);
+			Mensaje.Mostrar("Exito", "El archivo se guardó correctamente", TipoMensaje.Informacion);
 		}
 		#endregion
 		#region Metodos
@@ -116,7 +116,7 @@ namespace Miselaneas
 			dgvVisor.Columns["Monto"].HeaderText = "Monto";
 			dgvVisor.Columns["Medio"].HeaderText = "Medio de Pago";
 		}
-		
+
 		private void Iniciar()
 		{
 			CReporteRepo = new();
