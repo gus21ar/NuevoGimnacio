@@ -114,6 +114,7 @@
 			verToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.V;
 			verToolStripMenuItem.Size = new Size(244, 30);
 			verToolStripMenuItem.Text = "Ver";
+			verToolStripMenuItem.Click += verToolStripMenuItem_Click;
 			// 
 			// pagosToolStripMenuItem
 			// 

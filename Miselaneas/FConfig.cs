@@ -96,8 +96,8 @@ namespace Miselaneas
 
 		private void tPHoras_Enter(object sender, EventArgs e)
 		{
-			string hora = ConfigurationManager.AppSettings["HoraReporteM"]??"0";
-			string hora2 = ConfigurationManager.AppSettings["HoraReporteT"]??"0";
+			string hora = ConfigurationManager.AppSettings["HoraReporteM"] ?? "0";
+			string hora2 = ConfigurationManager.AppSettings["HoraReporteT"] ?? "0";
 			nudPrimero.Value = Convert.ToInt32(hora);
 			nudSegundo.Value = Convert.ToInt32(hora2);
 		}

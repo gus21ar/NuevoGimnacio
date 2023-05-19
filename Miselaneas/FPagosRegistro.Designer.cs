@@ -107,9 +107,10 @@
 			// lblCliente
 			// 
 			lblCliente.AutoSize = true;
+			lblCliente.Font = new Font("Georgia", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
 			lblCliente.Location = new Point(22, 16);
 			lblCliente.Name = "lblCliente";
-			lblCliente.Size = new Size(116, 38);
+			lblCliente.Size = new Size(76, 25);
 			lblCliente.TabIndex = 6;
 			lblCliente.Text = "Cliente";
 			// 
@@ -169,6 +170,7 @@
 			panGeneral.Name = "panGeneral";
 			panGeneral.Size = new Size(613, 371);
 			panGeneral.TabIndex = 10;
+			panGeneral.Visible = false;
 			// 
 			// FPagosRegistro
 			// 
@@ -184,7 +186,7 @@
 			Controls.Add(txtDni);
 			Controls.Add(label1);
 			ForeColor = Color.White;
-			FormBorderStyle = FormBorderStyle.FixedSingle;
+			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(7, 8, 7, 8);
 			Name = "FPagosRegistro";
 			StartPosition = FormStartPosition.CenterScreen;

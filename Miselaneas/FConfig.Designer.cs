@@ -359,9 +359,10 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(761, 461);
 			Controls.Add(tabControl1);
+			FormBorderStyle = FormBorderStyle.FixedToolWindow;
 			Name = "FConfig";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "FConfig";
+			Text = "Configuracion";
 			tabControl1.ResumeLayout(false);
 			tPCadena.ResumeLayout(false);
 			tPCadena.PerformLayout();

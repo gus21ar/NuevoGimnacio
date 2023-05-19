@@ -86,6 +86,7 @@
 			Controls.Add(txtNombre);
 			Controls.Add(label2);
 			Controls.Add(label1);
+			FormBorderStyle = FormBorderStyle.FixedToolWindow;
 			Margin = new Padding(8);
 			Name = "FMediosDePago";
 			StartPosition = FormStartPosition.CenterScreen;

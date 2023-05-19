@@ -39,38 +39,41 @@ namespace GymCheck
 		#region Formularios
 		private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			try
-			{
-				var ventana = new FAyuda();
-				ventana.ShowDialog();
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show(ex.Message);
-			}
+			this.Visible = false;
+			var ventana = new FAyuda();
+			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void agregarRedesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FRedesAdd();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void agregarMediosDePagoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FMediosDePago();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void aplicacionToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FConfig();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			Manager.Iniciar(this);
+			this.Visible = true;
 		}
 
 		//finalizar region
@@ -78,8 +81,10 @@ namespace GymCheck
 
 		private void nuevosToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FPagosRegistro();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void semaforoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,20 +127,26 @@ namespace GymCheck
 
 		private void btnReportes_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FReportes();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FModificarClientes();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		private void generarToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			this.Visible = false;
 			var ventana = new FReportes();
 			ventana.ShowDialog();
+			this.Visible = true;
 		}
 
 		#region Timer Reportes
@@ -233,5 +244,10 @@ namespace GymCheck
 
 
 		#endregion
+
+		private void verToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Mensaje.Mostrar("No Implementado", "No se ha implementado esta funcionalidad", TipoMensaje.Informacion);
+		}
 	}
 }

@@ -37,7 +37,7 @@ namespace Miselaneas
 
 		private void txtDni_TextChanged(object sender, EventArgs e)
 		{
-			btnBuscar.Enabled = txtDni.Text.Length > 0;
+			btnBuscar.Enabled = txtDni.Text.Length > 6;
 		}
 
 		private void txtDni_KeyPress(object sender, KeyPressEventArgs e)
@@ -61,7 +61,7 @@ namespace Miselaneas
 		{
 			lblCliente.Text = repoPago.LeyendaClienteDias(dniCliente);
 
-			btnBuscar.Enabled = panGeneral.Enabled = true;
+			panGeneral.Visible = panGeneral.Enabled = true;
 		}
 
 		private void txtMonto_TextChanged(object sender, EventArgs e)
