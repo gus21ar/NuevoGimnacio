@@ -33,6 +33,7 @@
 			label2 = new Label();
 			label3 = new Label();
 			btnCerrar = new Button();
+			label4 = new Label();
 			SuspendLayout();
 			// 
 			// lblpri
@@ -40,7 +41,7 @@
 			lblpri.AutoSize = true;
 			lblpri.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			lblpri.ForeColor = Color.White;
-			lblpri.Location = new Point(33, 42);
+			lblpri.Location = new Point(17, 222);
 			lblpri.Margin = new Padding(8, 0, 8, 0);
 			lblpri.Name = "lblpri";
 			lblpri.Size = new Size(225, 38);
@@ -52,7 +53,7 @@
 			label1.AutoSize = true;
 			label1.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			label1.ForeColor = Color.White;
-			label1.Location = new Point(33, 80);
+			label1.Location = new Point(316, 222);
 			label1.Margin = new Padding(8, 0, 8, 0);
 			label1.Name = "label1";
 			label1.Size = new Size(311, 38);
@@ -64,7 +65,7 @@
 			label2.AutoSize = true;
 			label2.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			label2.ForeColor = Color.GreenYellow;
-			label2.Location = new Point(33, 197);
+			label2.Location = new Point(17, 297);
 			label2.Margin = new Padding(8, 0, 8, 0);
 			label2.Name = "label2";
 			label2.Size = new Size(187, 38);
@@ -76,7 +77,7 @@
 			label3.AutoSize = true;
 			label3.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			label3.ForeColor = Color.GreenYellow;
-			label3.Location = new Point(33, 258);
+			label3.Location = new Point(240, 297);
 			label3.Margin = new Padding(8, 0, 8, 0);
 			label3.Name = "label3";
 			label3.Size = new Size(460, 38);
@@ -87,7 +88,7 @@
 			// 
 			btnCerrar.BackColor = Color.Firebrick;
 			btnCerrar.ForeColor = Color.White;
-			btnCerrar.Location = new Point(452, 32);
+			btnCerrar.Location = new Point(754, 30);
 			btnCerrar.Name = "btnCerrar";
 			btnCerrar.Size = new Size(57, 48);
 			btnCerrar.TabIndex = 4;
@@ -95,12 +96,23 @@
 			btnCerrar.UseVisualStyleBackColor = false;
 			btnCerrar.Click += btnCerrar_Click;
 			// 
+			// label4
+			// 
+			label4.AutoSize = true;
+			label4.ForeColor = Color.Orange;
+			label4.Location = new Point(17, 117);
+			label4.Name = "label4";
+			label4.Size = new Size(819, 38);
+			label4.TabIndex = 5;
+			label4.Text = "Si presiona 'Alt+M' se puede ver el munú de la aplicación";
+			// 
 			// FAyuda
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
-			ClientSize = new Size(551, 327);
+			ClientSize = new Size(837, 539);
+			Controls.Add(label4);
 			Controls.Add(btnCerrar);
 			Controls.Add(label3);
 			Controls.Add(label2);
@@ -122,5 +134,6 @@
 		private Label label2;
 		private Label label3;
 		private Button btnCerrar;
+		private Label label4;
 	}
 }

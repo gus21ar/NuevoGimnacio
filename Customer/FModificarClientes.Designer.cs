@@ -128,6 +128,7 @@
 			txtDniAbuscar.Name = "txtDniAbuscar";
 			txtDniAbuscar.Size = new Size(320, 44);
 			txtDniAbuscar.TabIndex = 3;
+			txtDniAbuscar.TextAlign = HorizontalAlignment.Center;
 			txtDniAbuscar.TextChanged += txtDniAbuscar_TextChanged;
 			txtDniAbuscar.KeyDown += txtDniAbuscar_KeyDown;
 			txtDniAbuscar.KeyPress += txtDniAbuscar_KeyPress;
@@ -198,6 +199,7 @@
 			txtDni.Name = "txtDni";
 			txtDni.Size = new Size(307, 44);
 			txtDni.TabIndex = 5;
+			txtDni.TextAlign = HorizontalAlignment.Center;
 			txtDni.TextChanged += txtNombre_TextChanged;
 			txtDni.KeyPress += txtDni_KeyPress;
 			// 
@@ -209,6 +211,7 @@
 			txtApellido.Name = "txtApellido";
 			txtApellido.Size = new Size(307, 44);
 			txtApellido.TabIndex = 4;
+			txtApellido.TextAlign = HorizontalAlignment.Center;
 			txtApellido.TextChanged += txtNombre_TextChanged;
 			// 
 			// txtNombre
@@ -219,6 +222,7 @@
 			txtNombre.Name = "txtNombre";
 			txtNombre.Size = new Size(307, 44);
 			txtNombre.TabIndex = 3;
+			txtNombre.TextAlign = HorizontalAlignment.Center;
 			txtNombre.TextChanged += txtNombre_TextChanged;
 			// 
 			// label5
@@ -273,6 +277,7 @@
 			txtMail.Name = "txtMail";
 			txtMail.Size = new Size(307, 44);
 			txtMail.TabIndex = 11;
+			txtMail.TextAlign = HorizontalAlignment.Center;
 			// 
 			// txtTelefono
 			// 
@@ -282,6 +287,7 @@
 			txtTelefono.Name = "txtTelefono";
 			txtTelefono.Size = new Size(307, 44);
 			txtTelefono.TabIndex = 10;
+			txtTelefono.TextAlign = HorizontalAlignment.Center;
 			// 
 			// txtDireccion
 			// 
@@ -291,6 +297,7 @@
 			txtDireccion.Name = "txtDireccion";
 			txtDireccion.Size = new Size(307, 44);
 			txtDireccion.TabIndex = 9;
+			txtDireccion.TextAlign = HorizontalAlignment.Center;
 			// 
 			// label6
 			// 

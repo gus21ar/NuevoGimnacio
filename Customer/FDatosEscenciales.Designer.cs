@@ -82,6 +82,7 @@
 			txtNombre.Name = "txtNombre";
 			txtNombre.Size = new Size(398, 44);
 			txtNombre.TabIndex = 2;
+			txtNombre.TextAlign = HorizontalAlignment.Center;
 			txtNombre.TextChanged += txtNombre_TextChanged;
 			// 
 			// txtApellido
@@ -92,6 +93,7 @@
 			txtApellido.Name = "txtApellido";
 			txtApellido.Size = new Size(398, 44);
 			txtApellido.TabIndex = 4;
+			txtApellido.TextAlign = HorizontalAlignment.Center;
 			txtApellido.TextChanged += txtNombre_TextChanged;
 			// 
 			// label2
@@ -112,6 +114,7 @@
 			txtDni.Name = "txtDni";
 			txtDni.Size = new Size(398, 44);
 			txtDni.TabIndex = 6;
+			txtDni.TextAlign = HorizontalAlignment.Center;
 			txtDni.TextChanged += txtNombre_TextChanged;
 			txtDni.KeyPress += txtDni_KeyPress;
 			// 

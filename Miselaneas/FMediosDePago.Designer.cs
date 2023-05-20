@@ -63,6 +63,7 @@
 			txtNombre.Name = "txtNombre";
 			txtNombre.Size = new Size(561, 44);
 			txtNombre.TabIndex = 2;
+			txtNombre.TextAlign = HorizontalAlignment.Center;
 			// 
 			// btnAgregar
 			// 

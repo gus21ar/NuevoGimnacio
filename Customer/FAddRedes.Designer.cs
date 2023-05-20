@@ -93,6 +93,7 @@
 			txtUsuario.Name = "txtUsuario";
 			txtUsuario.Size = new Size(632, 44);
 			txtUsuario.TabIndex = 4;
+			txtUsuario.TextAlign = HorizontalAlignment.Center;
 			txtUsuario.TextChanged += txtUsuario_TextChanged;
 			// 
 			// lsbRedesUser

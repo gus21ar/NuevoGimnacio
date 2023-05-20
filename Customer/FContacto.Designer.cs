@@ -111,6 +111,7 @@
 			txtDireccion.Name = "txtDireccion";
 			txtDireccion.Size = new Size(391, 44);
 			txtDireccion.TabIndex = 5;
+			txtDireccion.TextAlign = HorizontalAlignment.Center;
 			// 
 			// txtTelefono
 			// 
@@ -120,6 +121,7 @@
 			txtTelefono.Name = "txtTelefono";
 			txtTelefono.Size = new Size(391, 44);
 			txtTelefono.TabIndex = 6;
+			txtTelefono.TextAlign = HorizontalAlignment.Center;
 			// 
 			// txtMail
 			// 
@@ -129,6 +131,7 @@
 			txtMail.Name = "txtMail";
 			txtMail.Size = new Size(391, 44);
 			txtMail.TabIndex = 7;
+			txtMail.TextAlign = HorizontalAlignment.Center;
 			// 
 			// btnCancelar
 			// 
