@@ -361,7 +361,7 @@
 			Controls.Add(tabControl1);
 			FormBorderStyle = FormBorderStyle.FixedToolWindow;
 			Name = "FConfig";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "Configuracion";
 			tabControl1.ResumeLayout(false);
 			tPCadena.ResumeLayout(false);

@@ -63,6 +63,7 @@
 			txtDni.TextAlign = HorizontalAlignment.Center;
 			txtDni.TextChanged += txtDni_TextChanged;
 			txtDni.Enter += txtDni_Enter;
+			txtDni.KeyDown += txtDni_KeyDown;
 			txtDni.KeyPress += txtDni_KeyPress;
 			// 
 			// btnIngresar

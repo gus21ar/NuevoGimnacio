@@ -121,7 +121,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FAyuda";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "Contacto";
 			ResumeLayout(false);
 			PerformLayout();

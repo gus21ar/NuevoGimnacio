@@ -157,7 +157,7 @@
 			tbcCliente.Location = new Point(12, 169);
 			tbcCliente.Name = "tbcCliente";
 			tbcCliente.SelectedIndex = 0;
-			tbcCliente.Size = new Size(710, 520);
+			tbcCliente.Size = new Size(710, 414);
 			tbcCliente.TabIndex = 5;
 			// 
 			// tbpDatos
@@ -174,7 +174,7 @@
 			tbpDatos.Location = new Point(4, 47);
 			tbpDatos.Name = "tbpDatos";
 			tbpDatos.Padding = new Padding(3);
-			tbpDatos.Size = new Size(702, 469);
+			tbpDatos.Size = new Size(702, 363);
 			tbpDatos.TabIndex = 0;
 			tbpDatos.Text = "Datos";
 			tbpDatos.Enter += tbpDatos_Enter;
@@ -262,10 +262,10 @@
 			tbpContacto.Controls.Add(label7);
 			tbpContacto.Controls.Add(label8);
 			tbpContacto.ForeColor = Color.White;
-			tbpContacto.Location = new Point(4, 47);
+			tbpContacto.Location = new Point(4, 24);
 			tbpContacto.Name = "tbpContacto";
 			tbpContacto.Padding = new Padding(3);
-			tbpContacto.Size = new Size(702, 469);
+			tbpContacto.Size = new Size(702, 386);
 			tbpContacto.TabIndex = 1;
 			tbpContacto.Text = "Contacto";
 			// 
@@ -333,10 +333,10 @@
 			tbpFechas.Controls.Add(label9);
 			tbpFechas.Controls.Add(dtpInscripcion);
 			tbpFechas.Controls.Add(dtpNacimiento);
-			tbpFechas.Location = new Point(4, 47);
+			tbpFechas.Location = new Point(4, 24);
 			tbpFechas.Name = "tbpFechas";
 			tbpFechas.Padding = new Padding(3);
-			tbpFechas.Size = new Size(702, 469);
+			tbpFechas.Size = new Size(702, 386);
 			tbpFechas.TabIndex = 2;
 			tbpFechas.Text = "Fechas";
 			tbpFechas.Enter += tbpDatos_Enter;
@@ -386,10 +386,10 @@
 			tbpFoto.Controls.Add(cmbCamaras);
 			tbpFoto.Controls.Add(pbFoto);
 			tbpFoto.Controls.Add(pbCamara);
-			tbpFoto.Location = new Point(4, 47);
+			tbpFoto.Location = new Point(4, 24);
 			tbpFoto.Name = "tbpFoto";
 			tbpFoto.Padding = new Padding(3);
-			tbpFoto.Size = new Size(702, 469);
+			tbpFoto.Size = new Size(702, 386);
 			tbpFoto.TabIndex = 3;
 			tbpFoto.Text = "Foto";
 			tbpFoto.Enter += tbpFoto_Enter;
@@ -398,7 +398,7 @@
 			// 
 			btnGuardarFoto.BackColor = Color.OliveDrab;
 			btnGuardarFoto.ForeColor = Color.White;
-			btnGuardarFoto.Location = new Point(353, 404);
+			btnGuardarFoto.Location = new Point(374, 285);
 			btnGuardarFoto.Name = "btnGuardarFoto";
 			btnGuardarFoto.Size = new Size(328, 56);
 			btnGuardarFoto.TabIndex = 5;
@@ -410,7 +410,7 @@
 			// 
 			btnCapturarFoto.BackColor = Color.SteelBlue;
 			btnCapturarFoto.ForeColor = Color.White;
-			btnCapturarFoto.Location = new Point(353, 342);
+			btnCapturarFoto.Location = new Point(368, 215);
 			btnCapturarFoto.Name = "btnCapturarFoto";
 			btnCapturarFoto.Size = new Size(328, 56);
 			btnCapturarFoto.TabIndex = 4;
@@ -422,7 +422,7 @@
 			// 
 			btnIniciarCamara.BackColor = Color.SteelBlue;
 			btnIniciarCamara.ForeColor = Color.White;
-			btnIniciarCamara.Location = new Point(6, 404);
+			btnIniciarCamara.Location = new Point(11, 285);
 			btnIniciarCamara.Name = "btnIniciarCamara";
 			btnIniciarCamara.Size = new Size(328, 56);
 			btnIniciarCamara.TabIndex = 3;
@@ -435,16 +435,16 @@
 			cmbCamaras.BackColor = Color.DarkGray;
 			cmbCamaras.ForeColor = Color.White;
 			cmbCamaras.FormattingEnabled = true;
-			cmbCamaras.Location = new Point(11, 342);
+			cmbCamaras.Location = new Point(11, 215);
 			cmbCamaras.Name = "cmbCamaras";
 			cmbCamaras.Size = new Size(328, 46);
 			cmbCamaras.TabIndex = 2;
 			// 
 			// pbFoto
 			// 
-			pbFoto.Location = new Point(353, 6);
+			pbFoto.Location = new Point(389, 6);
 			pbFoto.Name = "pbFoto";
-			pbFoto.Size = new Size(343, 330);
+			pbFoto.Size = new Size(292, 190);
 			pbFoto.SizeMode = PictureBoxSizeMode.Zoom;
 			pbFoto.TabIndex = 1;
 			pbFoto.TabStop = false;
@@ -453,7 +453,7 @@
 			// 
 			pbCamara.Location = new Point(11, 6);
 			pbCamara.Name = "pbCamara";
-			pbCamara.Size = new Size(328, 330);
+			pbCamara.Size = new Size(292, 190);
 			pbCamara.SizeMode = PictureBoxSizeMode.Zoom;
 			pbCamara.TabIndex = 0;
 			pbCamara.TabStop = false;
@@ -468,10 +468,10 @@
 			tbpRedes.Controls.Add(label14);
 			tbpRedes.Controls.Add(label13);
 			tbpRedes.Controls.Add(cmbRedesSociales);
-			tbpRedes.Location = new Point(4, 47);
+			tbpRedes.Location = new Point(4, 24);
 			tbpRedes.Name = "tbpRedes";
 			tbpRedes.Padding = new Padding(3);
-			tbpRedes.Size = new Size(702, 469);
+			tbpRedes.Size = new Size(702, 386);
 			tbpRedes.TabIndex = 4;
 			tbpRedes.Text = "Redes";
 			tbpRedes.Enter += tbpRedes_Enter;
@@ -496,7 +496,7 @@
 			ltbUsuariosRedes.ItemHeight = 38;
 			ltbUsuariosRedes.Location = new Point(15, 102);
 			ltbUsuariosRedes.Name = "ltbUsuariosRedes";
-			ltbUsuariosRedes.Size = new Size(477, 346);
+			ltbUsuariosRedes.Size = new Size(477, 232);
 			ltbUsuariosRedes.TabIndex = 6;
 			// 
 			// btnAgregarRedSocial
@@ -557,10 +557,10 @@
 			tbpOtros.Controls.Add(label11);
 			tbpOtros.Controls.Add(txtComentario);
 			tbpOtros.ForeColor = Color.White;
-			tbpOtros.Location = new Point(4, 47);
+			tbpOtros.Location = new Point(4, 24);
 			tbpOtros.Name = "tbpOtros";
 			tbpOtros.Padding = new Padding(3);
-			tbpOtros.Size = new Size(702, 469);
+			tbpOtros.Size = new Size(702, 386);
 			tbpOtros.TabIndex = 5;
 			tbpOtros.Text = "Otros";
 			tbpOtros.Enter += tbpDatos_Enter;
@@ -587,7 +587,7 @@
 			// pnlAceptar
 			// 
 			pnlAceptar.Controls.Add(btnAceptar);
-			pnlAceptar.Location = new Point(12, 746);
+			pnlAceptar.Location = new Point(12, 647);
 			pnlAceptar.Name = "pnlAceptar";
 			pnlAceptar.Size = new Size(710, 100);
 			pnlAceptar.TabIndex = 6;
@@ -609,18 +609,19 @@
 			lblInfo.AutoSize = true;
 			lblInfo.Font = new Font("Georgia", 18F, FontStyle.Regular, GraphicsUnit.Point);
 			lblInfo.ForeColor = Color.Khaki;
-			lblInfo.Location = new Point(15, 705);
+			lblInfo.Location = new Point(16, 615);
 			lblInfo.Name = "lblInfo";
 			lblInfo.Size = new Size(625, 29);
 			lblInfo.TabIndex = 7;
 			lblInfo.Text = "Los cambios serán efectivos cuando haga click en el botón";
+			lblInfo.Click += lblInfo_Click;
 			// 
 			// FModificarClientes
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
-			ClientSize = new Size(738, 861);
+			ClientSize = new Size(738, 759);
 			Controls.Add(lblInfo);
 			Controls.Add(pnlAceptar);
 			Controls.Add(tbcCliente);
@@ -633,7 +634,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FModificarClientes";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "FModificarClientes";
 			tbcCliente.ResumeLayout(false);
 			tbpDatos.ResumeLayout(false);

@@ -209,7 +209,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FContacto";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "Datos de Contacto";
 			panel1.ResumeLayout(false);
 			panel2.ResumeLayout(false);

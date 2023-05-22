@@ -189,7 +189,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(7, 8, 7, 8);
 			Name = "FPagosRegistro";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "Pagos";
 			panPago.ResumeLayout(false);
 			panPago.PerformLayout();

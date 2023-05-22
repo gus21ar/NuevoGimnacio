@@ -176,5 +176,13 @@ namespace Miselaneas
 		{
 			fSemaforo = null;
 		}
+
+		private void txtDni_KeyDown(object sender, KeyEventArgs e)
+		{
+			if(e.KeyData == Keys.Enter)
+			{
+				btnIngresar_Click(sender, new());
+			}
+		}
 	}
 }

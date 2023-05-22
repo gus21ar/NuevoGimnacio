@@ -111,7 +111,7 @@
 			Margin = new Padding(8);
 			Name = "FRedesAdd";
 			ShowIcon = false;
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			ResumeLayout(false);
 			PerformLayout();
 		}

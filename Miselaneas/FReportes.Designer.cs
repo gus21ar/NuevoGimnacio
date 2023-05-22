@@ -100,9 +100,9 @@
 			dgvVisor.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 			dgvVisor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle2.BackColor = SystemColors.Window;
+			dataGridViewCellStyle2.BackColor = SystemColors.Info;
 			dataGridViewCellStyle2.Font = new Font("Georgia", 16F, FontStyle.Regular, GraphicsUnit.Point);
-			dataGridViewCellStyle2.ForeColor = Color.White;
+			dataGridViewCellStyle2.ForeColor = Color.Black;
 			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
 			dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -110,14 +110,14 @@
 			dgvVisor.Location = new Point(12, 197);
 			dgvVisor.Name = "dgvVisor";
 			dgvVisor.RowTemplate.Height = 25;
-			dgvVisor.Size = new Size(860, 502);
+			dgvVisor.Size = new Size(860, 426);
 			dgvVisor.TabIndex = 5;
 			// 
 			// pnlBotonera
 			// 
 			pnlBotonera.Controls.Add(btnSalir);
 			pnlBotonera.Controls.Add(btnGuardar);
-			pnlBotonera.Location = new Point(12, 705);
+			pnlBotonera.Location = new Point(12, 629);
 			pnlBotonera.Name = "pnlBotonera";
 			pnlBotonera.Size = new Size(860, 70);
 			pnlBotonera.TabIndex = 6;
@@ -200,7 +200,7 @@
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
-			ClientSize = new Size(884, 791);
+			ClientSize = new Size(884, 711);
 			Controls.Add(chbHoy);
 			Controls.Add(pnlFecha);
 			Controls.Add(pnlBotonera);
@@ -210,7 +210,7 @@
 			Controls.Add(btnGenerar);
 			ForeColor = Color.White;
 			Name = "FReportes";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "Reportes";
 			((System.ComponentModel.ISupportInitialize)dgvVisor).EndInit();
 			pnlBotonera.ResumeLayout(false);

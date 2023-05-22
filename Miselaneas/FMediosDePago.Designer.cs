@@ -90,7 +90,7 @@
 			FormBorderStyle = FormBorderStyle.FixedToolWindow;
 			Margin = new Padding(8);
 			Name = "FMediosDePago";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "Agregar Medios De Pago";
 			ResumeLayout(false);
 			PerformLayout();

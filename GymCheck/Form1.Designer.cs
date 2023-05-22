@@ -245,7 +245,7 @@
 			BtnClientes.Location = new Point(17, 68);
 			BtnClientes.Margin = new Padding(8);
 			BtnClientes.Name = "BtnClientes";
-			BtnClientes.Size = new Size(450, 380);
+			BtnClientes.Size = new Size(450, 388);
 			BtnClientes.TabIndex = 1;
 			BtnClientes.Text = "Cliente Nuevo";
 			BtnClientes.UseVisualStyleBackColor = false;
@@ -256,10 +256,10 @@
 			btnPagos.BackColor = Color.IndianRed;
 			btnPagos.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			btnPagos.ForeColor = Color.White;
-			btnPagos.Location = new Point(17, 464);
+			btnPagos.Location = new Point(483, 68);
 			btnPagos.Margin = new Padding(8);
 			btnPagos.Name = "btnPagos";
-			btnPagos.Size = new Size(450, 180);
+			btnPagos.Size = new Size(434, 208);
 			btnPagos.TabIndex = 2;
 			btnPagos.Text = "Pagos";
 			btnPagos.UseVisualStyleBackColor = false;
@@ -270,10 +270,10 @@
 			btnAsistencia.BackColor = Color.IndianRed;
 			btnAsistencia.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			btnAsistencia.ForeColor = Color.White;
-			btnAsistencia.Location = new Point(517, 68);
+			btnAsistencia.Location = new Point(933, 68);
 			btnAsistencia.Margin = new Padding(8);
 			btnAsistencia.Name = "btnAsistencia";
-			btnAsistencia.Size = new Size(450, 380);
+			btnAsistencia.Size = new Size(347, 208);
 			btnAsistencia.TabIndex = 3;
 			btnAsistencia.Text = "Asistencia";
 			btnAsistencia.UseVisualStyleBackColor = false;
@@ -287,17 +287,17 @@
 			panVerCliente.Controls.Add(lblNombre);
 			panVerCliente.Controls.Add(pbClienteAcces);
 			panVerCliente.ForeColor = Color.White;
-			panVerCliente.Location = new Point(517, 464);
+			panVerCliente.Location = new Point(495, 292);
 			panVerCliente.Margin = new Padding(8);
 			panVerCliente.Name = "panVerCliente";
-			panVerCliente.Size = new Size(450, 380);
+			panVerCliente.Size = new Size(785, 402);
 			panVerCliente.TabIndex = 4;
 			panVerCliente.Visible = false;
 			// 
 			// btnListo
 			// 
 			btnListo.BackColor = Color.SteelBlue;
-			btnListo.Location = new Point(287, 54);
+			btnListo.Location = new Point(23, 325);
 			btnListo.Name = "btnListo";
 			btnListo.Size = new Size(160, 50);
 			btnListo.TabIndex = 6;
@@ -309,7 +309,7 @@
 			// 
 			lblResumen.AutoSize = true;
 			lblResumen.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
-			lblResumen.Location = new Point(8, 262);
+			lblResumen.Location = new Point(23, 284);
 			lblResumen.Margin = new Padding(8, 0, 8, 0);
 			lblResumen.Name = "lblResumen";
 			lblResumen.Size = new Size(98, 38);
@@ -320,7 +320,7 @@
 			// 
 			lblNombre.AutoSize = true;
 			lblNombre.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
-			lblNombre.Location = new Point(8, 8);
+			lblNombre.Location = new Point(23, 8);
 			lblNombre.Margin = new Padding(8, 0, 8, 0);
 			lblNombre.Name = "lblNombre";
 			lblNombre.Size = new Size(98, 38);
@@ -329,10 +329,10 @@
 			// 
 			// pbClienteAcces
 			// 
-			pbClienteAcces.Location = new Point(8, 54);
+			pbClienteAcces.Location = new Point(23, 54);
 			pbClienteAcces.Margin = new Padding(8);
 			pbClienteAcces.Name = "pbClienteAcces";
-			pbClienteAcces.Size = new Size(200, 200);
+			pbClienteAcces.Size = new Size(270, 218);
 			pbClienteAcces.SizeMode = PictureBoxSizeMode.Zoom;
 			pbClienteAcces.TabIndex = 0;
 			pbClienteAcces.TabStop = false;
@@ -342,7 +342,7 @@
 			btnReportes.BackColor = Color.IndianRed;
 			btnReportes.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			btnReportes.ForeColor = Color.White;
-			btnReportes.Location = new Point(17, 664);
+			btnReportes.Location = new Point(17, 505);
 			btnReportes.Margin = new Padding(8);
 			btnReportes.Name = "btnReportes";
 			btnReportes.Size = new Size(450, 180);
@@ -356,7 +356,7 @@
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
-			ClientSize = new Size(984, 861);
+			ClientSize = new Size(1284, 711);
 			Controls.Add(btnReportes);
 			Controls.Add(panVerCliente);
 			Controls.Add(btnAsistencia);
@@ -365,7 +365,7 @@
 			Controls.Add(menuPrincipal);
 			MainMenuStrip = menuPrincipal;
 			Margin = new Padding(8);
-			MinimumSize = new Size(1000, 900);
+			MinimumSize = new Size(1000, 750);
 			Name = "Form1";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "GymCheck";

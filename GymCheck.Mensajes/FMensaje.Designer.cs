@@ -137,7 +137,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FMensaje";
-			StartPosition = FormStartPosition.CenterScreen;
+			StartPosition = FormStartPosition.CenterParent;
 			Text = "FMensaje";
 			((System.ComponentModel.ISupportInitialize)pbIcono).EndInit();
 			panel1.ResumeLayout(false);

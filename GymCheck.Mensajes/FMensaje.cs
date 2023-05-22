@@ -48,7 +48,7 @@ namespace GymCheck.Mensajes
 					Icon MiIcono = new Icon(directorio + @"Recursos\Informacion.ico");
 					Image MiImagen = MiIcono.ToBitmap();
 					pbIcono.Image = MiImagen;
-					this.BackColor = Color.CornflowerBlue;					
+					this.BackColor = Color.CornflowerBlue;
 					btnAceptar.Visible = true;
 					break;
 				case TipoMensaje.Error:
@@ -56,7 +56,7 @@ namespace GymCheck.Mensajes
 					MiIcono = new Icon(directorio + @"Recursos\Error.ico");
 					MiImagen = MiIcono.ToBitmap();
 					pbIcono.Image = MiImagen;
-					this.BackColor = Color.Firebrick;					
+					this.BackColor = Color.Firebrick;
 					btnAceptar.Visible = true;
 					break;
 				case TipoMensaje.Advertencia:
@@ -74,7 +74,7 @@ namespace GymCheck.Mensajes
 					MiIcono = new Icon(directorio + @"Recursos\Pregunta.ico");
 					MiImagen = MiIcono.ToBitmap();
 					pbIcono.Image = MiImagen;
-					this.BackColor = Color.CornflowerBlue;					
+					this.BackColor = Color.CornflowerBlue;
 					btnSI.Visible = true;
 					btnNo.Visible = true;
 					btnAceptar.Visible = false;
