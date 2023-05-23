@@ -91,25 +91,29 @@
 			// 
 			// dgvVisor
 			// 
+			dgvVisor.AllowUserToAddRows = false;
+			dgvVisor.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle1.BackColor = Color.Black;
 			dataGridViewCellStyle1.Font = new Font("Georgia", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
 			dataGridViewCellStyle1.ForeColor = Color.White;
+			dataGridViewCellStyle1.SelectionBackColor = Color.CornflowerBlue;
+			dataGridViewCellStyle1.SelectionForeColor = SystemColors.Window;
 			dgvVisor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			dgvVisor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 			dgvVisor.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 			dgvVisor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle2.BackColor = SystemColors.Info;
+			dataGridViewCellStyle2.BackColor = Color.SeaGreen;
 			dataGridViewCellStyle2.Font = new Font("Georgia", 16F, FontStyle.Regular, GraphicsUnit.Point);
-			dataGridViewCellStyle2.ForeColor = Color.Black;
-			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+			dataGridViewCellStyle2.ForeColor = Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = Color.CornflowerBlue;
+			dataGridViewCellStyle2.SelectionForeColor = Color.White;
 			dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
 			dgvVisor.DefaultCellStyle = dataGridViewCellStyle2;
 			dgvVisor.Location = new Point(12, 197);
 			dgvVisor.Name = "dgvVisor";
-			dgvVisor.RowTemplate.Height = 25;
+			dgvVisor.ReadOnly = true;
 			dgvVisor.Size = new Size(860, 426);
 			dgvVisor.TabIndex = 5;
 			// 
@@ -210,7 +214,7 @@
 			Controls.Add(btnGenerar);
 			ForeColor = Color.White;
 			Name = "FReportes";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Reportes";
 			((System.ComponentModel.ISupportInitialize)dgvVisor).EndInit();
 			pnlBotonera.ResumeLayout(false);

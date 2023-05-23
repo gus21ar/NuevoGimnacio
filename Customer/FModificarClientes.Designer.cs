@@ -634,7 +634,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FModificarClientes";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "FModificarClientes";
 			tbcCliente.ResumeLayout(false);
 			tbpDatos.ResumeLayout(false);

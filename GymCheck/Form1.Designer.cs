@@ -57,6 +57,7 @@
 			pbClienteAcces = new PictureBox();
 			btnReportes = new Button();
 			tmrReportes = new System.Windows.Forms.Timer(components);
+			btnUpdateCliente = new Button();
 			menuPrincipal.SuspendLayout();
 			panVerCliente.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pbClienteAcces).BeginInit();
@@ -245,7 +246,7 @@
 			BtnClientes.Location = new Point(17, 68);
 			BtnClientes.Margin = new Padding(8);
 			BtnClientes.Name = "BtnClientes";
-			BtnClientes.Size = new Size(450, 388);
+			BtnClientes.Size = new Size(450, 208);
 			BtnClientes.TabIndex = 1;
 			BtnClientes.Text = "Cliente Nuevo";
 			BtnClientes.UseVisualStyleBackColor = false;
@@ -259,7 +260,7 @@
 			btnPagos.Location = new Point(483, 68);
 			btnPagos.Margin = new Padding(8);
 			btnPagos.Name = "btnPagos";
-			btnPagos.Size = new Size(434, 208);
+			btnPagos.Size = new Size(390, 208);
 			btnPagos.TabIndex = 2;
 			btnPagos.Text = "Pagos";
 			btnPagos.UseVisualStyleBackColor = false;
@@ -270,10 +271,10 @@
 			btnAsistencia.BackColor = Color.IndianRed;
 			btnAsistencia.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			btnAsistencia.ForeColor = Color.White;
-			btnAsistencia.Location = new Point(933, 68);
+			btnAsistencia.Location = new Point(890, 68);
 			btnAsistencia.Margin = new Padding(8);
 			btnAsistencia.Name = "btnAsistencia";
-			btnAsistencia.Size = new Size(347, 208);
+			btnAsistencia.Size = new Size(390, 208);
 			btnAsistencia.TabIndex = 3;
 			btnAsistencia.Text = "Asistencia";
 			btnAsistencia.UseVisualStyleBackColor = false;
@@ -342,7 +343,7 @@
 			btnReportes.BackColor = Color.IndianRed;
 			btnReportes.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
 			btnReportes.ForeColor = Color.White;
-			btnReportes.Location = new Point(17, 505);
+			btnReportes.Location = new Point(17, 514);
 			btnReportes.Margin = new Padding(8);
 			btnReportes.Name = "btnReportes";
 			btnReportes.Size = new Size(450, 180);
@@ -351,12 +352,27 @@
 			btnReportes.UseVisualStyleBackColor = false;
 			btnReportes.Click += btnReportes_Click;
 			// 
+			// btnUpdateCliente
+			// 
+			btnUpdateCliente.BackColor = Color.IndianRed;
+			btnUpdateCliente.Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
+			btnUpdateCliente.ForeColor = Color.White;
+			btnUpdateCliente.Location = new Point(17, 292);
+			btnUpdateCliente.Margin = new Padding(8);
+			btnUpdateCliente.Name = "btnUpdateCliente";
+			btnUpdateCliente.Size = new Size(450, 208);
+			btnUpdateCliente.TabIndex = 6;
+			btnUpdateCliente.Text = "Modificar datos de Cliente";
+			btnUpdateCliente.UseVisualStyleBackColor = false;
+			btnUpdateCliente.Click += modificarToolStripMenuItem_Click;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
 			ClientSize = new Size(1284, 711);
+			Controls.Add(btnUpdateCliente);
 			Controls.Add(btnReportes);
 			Controls.Add(panVerCliente);
 			Controls.Add(btnAsistencia);
@@ -369,6 +385,7 @@
 			Name = "Form1";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "GymCheck";
+			Load += Form1_Load;
 			menuPrincipal.ResumeLayout(false);
 			menuPrincipal.PerformLayout();
 			panVerCliente.ResumeLayout(false);
@@ -408,5 +425,6 @@
 		private Button btnReportes;
 		private ToolStripMenuItem generarToolStripMenuItem;
 		private System.Windows.Forms.Timer tmrReportes;
+		private Button btnUpdateCliente;
 	}
 }

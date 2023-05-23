@@ -178,7 +178,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FFechas";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "FFechas";
 			panel1.ResumeLayout(false);
 			panel2.ResumeLayout(false);

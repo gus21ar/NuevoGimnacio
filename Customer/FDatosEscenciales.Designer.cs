@@ -227,7 +227,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FDatosEscenciales";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "FDatosEscenciales";
 			panel1.ResumeLayout(false);
 			panel2.ResumeLayout(false);

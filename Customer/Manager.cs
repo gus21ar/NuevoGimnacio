@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Security.Principal;
+using GymCheck.Mensajes;
 
 namespace Customer
 {
@@ -20,6 +22,7 @@ namespace Customer
 	}
 	public static class Manager 
 	{
+		private static Screen MyScreen;
 		private static Dictionary<Ventanas, Form> VentanasActuales { get; set; } = null!; 
 		public static ICliente ClienteNuevo { get; set; } = null!;
 		public static List<IUsuariosRedes> UsuariosRedesList { get; set; } = null!;
@@ -31,8 +34,9 @@ namespace Customer
 
 		private static Form padre = new Form();
 		
-		public static void Iniciar(Form Padre)
+		public static void Iniciar(Form Padre , Screen screen)
 		{
+			MyScreen = screen;
 			DefaultDirectory = ConfigurationManager.AppSettings["RutaFotos"]??string.Empty;
 			BuckUpDirectory = ConfigurationManager.AppSettings["RutaBuckUp"]??string.Empty;
 			DefaultFilepath = DefaultDirectory + "Default.jpg";
@@ -40,6 +44,7 @@ namespace Customer
 			ClienteNuevo = new CClienteDto();
 			padre = Padre;
 			var ventana = new FTomarFoto();
+			ventana.Location = MyScreen.Bounds.Location;
 			VentanasActuales = new Dictionary<Ventanas, Form>();
 			VentanasActuales.Add(Ventanas.TomarFoto, ventana);
 			ventana.ShowDialog();
@@ -49,6 +54,7 @@ namespace Customer
 			var cliente = new CClienteDto();
 			ClienteNuevo = cliente;
 			var ventana = new FTomarFoto();
+			ventana.Location = MyScreen.Bounds.Location;
 			VentanasActuales.Clear();
 			VentanasActuales.Add(Ventanas.TomarFoto, ventana);
 			ventana.ShowDialog();
@@ -65,26 +71,31 @@ namespace Customer
 				{
 					case Ventanas.TomarFoto:
 						var ventana = new FTomarFoto();
+						ventana.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.TomarFoto, ventana);
 						ventana.Show();
 						break;
 					case Ventanas.DatosEscenciales:
 						var ventana2 = new FDatosEscenciales();
+						ventana2.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.DatosEscenciales, ventana2);
 						ventana2.Show();
 						break;
 					case Ventanas.Contacto:
 						var ventana3 = new FContacto();
+						ventana3.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.Contacto, ventana3);
 						ventana3.Show();
 						break;
 					case Ventanas.Redes:
 						var ventana4 = new FAddRedes();
+						ventana4.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.Redes, ventana4);
 						ventana4.Show();
 						break;
 					case Ventanas.Confirmacion:
 						var ventana5 = new FFechas();
+						ventana5.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.Confirmacion, ventana5);
 						ventana5.Show();
 						break;
@@ -115,12 +126,13 @@ namespace Customer
 				{
 					var aux = Convert.ToInt32(ClienteNuevo.Dni);
 					repo.AgregarRedes(aux, UsuariosRedesList);
-				}
-				MessageBox.Show("Cliente agregado correctamente");
+				}				
+				Mensaje.Mostrar("Ok", "Cliente agregado correctamente", TipoMensaje.Informacion);
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.Message);
+				Mensaje.Mostrar("Ups", "El Cliente no ha sido agregado", TipoMensaje.Error);
+
 			}
 			finally
 			{

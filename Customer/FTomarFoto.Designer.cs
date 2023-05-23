@@ -153,7 +153,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8, 7, 8, 7);
 			Name = "FTomarFoto";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Agregar Cliente";
 			Activated += FTomarFoto_Activated;
 			FormClosed += FTomarFoto_FormClosed;

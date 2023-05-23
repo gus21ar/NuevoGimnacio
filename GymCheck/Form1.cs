@@ -12,7 +12,11 @@ namespace GymCheck
 	public partial class Form1 : Form, IObservador
 	{
 		DateTime Alarma1, Alarma2;
-
+		#region Monitores
+		Screen[] screens = Screen.AllScreens; //Obtiene todos los monitores
+		Screen sprincipal, ssecundario;
+		bool IsSeconScreen = false;
+		#endregion
 		public Form1()
 		{
 			InitializeComponent();
@@ -41,6 +45,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FAyuda();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -49,6 +54,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FRedesAdd();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -57,6 +63,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FMediosDePago();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -65,6 +72,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FConfig();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -72,7 +80,7 @@ namespace GymCheck
 		private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.Visible = false;
-			Manager.Iniciar(this);
+			Manager.Iniciar(this,sprincipal);
 			this.Visible = true;
 		}
 
@@ -83,12 +91,14 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FPagosRegistro();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
 
 		private void semaforoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			FSemaforo.Instacia.Location = ssecundario.Bounds.Location;
 			FSemaforo.Instacia.Show();
 			FSemaforo.Instacia.Activate();
 
@@ -129,6 +139,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FReportes();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -137,6 +148,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FModificarClientes();
+			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -248,6 +260,27 @@ namespace GymCheck
 		private void verToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			Mensaje.Mostrar("No Implementado", "No se ha implementado esta funcionalidad", TipoMensaje.Informacion);
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			IsSeconScreen = screens.Length > 1;
+			if(IsSeconScreen)
+			{
+				sprincipal = Screen.PrimaryScreen;
+				foreach(Screen s in screens)
+				{
+					if(s != sprincipal )
+					{
+						ssecundario = s;
+						break;
+					}
+				}
+			}
+			else
+			{
+				sprincipal = ssecundario = Screen.PrimaryScreen;
+			}
 		}
 	}
 }

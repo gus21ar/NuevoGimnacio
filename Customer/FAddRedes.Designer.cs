@@ -186,7 +186,7 @@
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(8);
 			Name = "FAddRedes";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "FAddRedes";
 			panel1.ResumeLayout(false);
 			ResumeLayout(false);
