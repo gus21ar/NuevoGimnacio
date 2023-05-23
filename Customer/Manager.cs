@@ -71,30 +71,35 @@ namespace Customer
 				{
 					case Ventanas.TomarFoto:
 						var ventana = new FTomarFoto();
+						ventana.StartPosition = FormStartPosition.Manual;
 						ventana.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.TomarFoto, ventana);
 						ventana.Show();
 						break;
 					case Ventanas.DatosEscenciales:
 						var ventana2 = new FDatosEscenciales();
+						ventana2.StartPosition = FormStartPosition.Manual;
 						ventana2.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.DatosEscenciales, ventana2);
 						ventana2.Show();
 						break;
 					case Ventanas.Contacto:
 						var ventana3 = new FContacto();
+						ventana3.StartPosition = FormStartPosition.Manual;
 						ventana3.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.Contacto, ventana3);
 						ventana3.Show();
 						break;
 					case Ventanas.Redes:
 						var ventana4 = new FAddRedes();
+						ventana4.StartPosition = FormStartPosition.Manual;
 						ventana4.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.Redes, ventana4);
 						ventana4.Show();
 						break;
 					case Ventanas.Confirmacion:
 						var ventana5 = new FFechas();
+						ventana5.StartPosition = FormStartPosition.Manual;
 						ventana5.Location = MyScreen.Bounds.Location;
 						VentanasActuales.Add(Ventanas.Confirmacion, ventana5);
 						ventana5.Show();

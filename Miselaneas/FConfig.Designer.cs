@@ -29,6 +29,10 @@
 		private void InitializeComponent()
 		{
 			tabControl1 = new TabControl();
+			tbpRapido = new TabPage();
+			rdbDesarrollo = new RadioButton();
+			rdbPrueba = new RadioButton();
+			rdbOxigen = new RadioButton();
 			tPCadena = new TabPage();
 			btnGuardar = new Button();
 			txtPass = new TextBox();
@@ -60,6 +64,7 @@
 			fBDBuckUp = new FolderBrowserDialog();
 			fBDPdfFolder = new FolderBrowserDialog();
 			tabControl1.SuspendLayout();
+			tbpRapido.SuspendLayout();
 			tPCadena.SuspendLayout();
 			tPRutas.SuspendLayout();
 			tPHoras.SuspendLayout();
@@ -69,6 +74,7 @@
 			// 
 			// tabControl1
 			// 
+			tabControl1.Controls.Add(tbpRapido);
 			tabControl1.Controls.Add(tPCadena);
 			tabControl1.Controls.Add(tPRutas);
 			tabControl1.Controls.Add(tPHoras);
@@ -77,6 +83,54 @@
 			tabControl1.SelectedIndex = 0;
 			tabControl1.Size = new Size(713, 437);
 			tabControl1.TabIndex = 0;
+			// 
+			// tbpRapido
+			// 
+			tbpRapido.Controls.Add(rdbDesarrollo);
+			tbpRapido.Controls.Add(rdbPrueba);
+			tbpRapido.Controls.Add(rdbOxigen);
+			tbpRapido.Location = new Point(4, 47);
+			tbpRapido.Name = "tbpRapido";
+			tbpRapido.Padding = new Padding(3);
+			tbpRapido.Size = new Size(705, 386);
+			tbpRapido.TabIndex = 3;
+			tbpRapido.Text = "Rápido";
+			tbpRapido.UseVisualStyleBackColor = true;
+			// 
+			// rdbDesarrollo
+			// 
+			rdbDesarrollo.AutoSize = true;
+			rdbDesarrollo.Checked = true;
+			rdbDesarrollo.Location = new Point(6, 137);
+			rdbDesarrollo.Name = "rdbDesarrollo";
+			rdbDesarrollo.Size = new Size(182, 42);
+			rdbDesarrollo.TabIndex = 2;
+			rdbDesarrollo.TabStop = true;
+			rdbDesarrollo.Text = "Desarrollo";
+			rdbDesarrollo.UseVisualStyleBackColor = true;
+			rdbDesarrollo.CheckedChanged += rdbDesarrollo_CheckedChanged;
+			// 
+			// rdbPrueba
+			// 
+			rdbPrueba.AutoSize = true;
+			rdbPrueba.Location = new Point(6, 89);
+			rdbPrueba.Name = "rdbPrueba";
+			rdbPrueba.Size = new Size(136, 42);
+			rdbPrueba.TabIndex = 1;
+			rdbPrueba.TabStop = true;
+			rdbPrueba.Text = "Prueba";
+			rdbPrueba.UseVisualStyleBackColor = true;
+			// 
+			// rdbOxigen
+			// 
+			rdbOxigen.AutoSize = true;
+			rdbOxigen.Location = new Point(6, 41);
+			rdbOxigen.Name = "rdbOxigen";
+			rdbOxigen.Size = new Size(134, 42);
+			rdbOxigen.TabIndex = 0;
+			rdbOxigen.TabStop = true;
+			rdbOxigen.Text = "Oxigen";
+			rdbOxigen.UseVisualStyleBackColor = true;
 			// 
 			// tPCadena
 			// 
@@ -96,6 +150,7 @@
 			tPCadena.TabIndex = 0;
 			tPCadena.Text = "Cadena";
 			tPCadena.UseVisualStyleBackColor = true;
+			tPCadena.Enter += tPCadena_Enter;
 			// 
 			// btnGuardar
 			// 
@@ -194,6 +249,7 @@
 			tPRutas.TabIndex = 1;
 			tPRutas.Text = "Rutas";
 			tPRutas.UseVisualStyleBackColor = true;
+			tPRutas.Enter += tPRutas_Enter;
 			// 
 			// label5
 			// 
@@ -364,6 +420,8 @@
 			StartPosition = FormStartPosition.CenterParent;
 			Text = "Configuracion";
 			tabControl1.ResumeLayout(false);
+			tbpRapido.ResumeLayout(false);
+			tbpRapido.PerformLayout();
 			tPCadena.ResumeLayout(false);
 			tPCadena.PerformLayout();
 			tPRutas.ResumeLayout(false);
@@ -408,5 +466,9 @@
 		private NumericUpDown nudPrimero;
 		private Label label7;
 		private Button btnConfigurar;
+		private TabPage tbpRapido;
+		private RadioButton rdbOxigen;
+		private RadioButton rdbDesarrollo;
+		private RadioButton rdbPrueba;
 	}
 }

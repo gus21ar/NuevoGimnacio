@@ -12,7 +12,6 @@ namespace Miselaneas
 		public FConfig()
 		{
 			InitializeComponent();
-			CargarDatos();
 		}
 
 		private void btnGymFolder_Click(object sender, EventArgs e)
@@ -61,6 +60,11 @@ namespace Miselaneas
 			txtBase.Text = baseDatos;
 			txtUsuario.Text = usuario;
 			txtPass.Text = password;
+
+		}
+
+		private void CargarRutas()
+		{
 			lblFolderDefault.Text = ConfigurationManager.AppSettings["RutaFotos"];
 			lblFolderBuckUp.Text = ConfigurationManager.AppSettings["RutaBuckUp"];
 			lblFolderPdf.Text = ConfigurationManager.AppSettings["RutaPdf"];
@@ -100,6 +104,54 @@ namespace Miselaneas
 			string hora2 = ConfigurationManager.AppSettings["HoraReporteT"] ?? "0";
 			nudPrimero.Value = Convert.ToInt32(hora);
 			nudSegundo.Value = Convert.ToInt32(hora2);
+		}
+
+		private void rdbDesarrollo_CheckedChanged(object sender, EventArgs e)
+		{
+			if (rdbOxigen.Checked)
+			{
+				if (DataBaseSettings(".\\Sqlserver", "GymDB", "sa", "genius"))
+					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Oxigen Gym", TipoMensaje.Informacion);
+				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+			}
+			else if (rdbDesarrollo.Checked)
+			{
+				if (DataBaseSettings("SAIKANO\\SQLEXPRESS", "GymDB", "sa", "2016"))
+					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Desarrollo", TipoMensaje.Informacion);
+				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+			}
+			else if (rdbPrueba.Checked)
+			{
+				if (DataBaseSettings(".\\Sqlserver", "GymDBPrueba", "sa", "genius"))
+					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Producción", TipoMensaje.Informacion);
+				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+			}
+		}
+
+		private bool DataBaseSettings(string ser, string bas, string use, string pas)
+		{
+			try
+			{
+				EscribirConfig("Servidor", ser);
+				EscribirConfig("Database", bas);
+				EscribirConfig("User", use);
+				EscribirConfig("Password", pas);
+				return true;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		private void tPCadena_Enter(object sender, EventArgs e)
+		{
+			CargarDatos();
+		}
+
+		private void tPRutas_Enter(object sender, EventArgs e)
+		{
+			CargarRutas();
 		}
 	}
 }

@@ -45,6 +45,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FAyuda();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -54,6 +55,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FRedesAdd();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -63,6 +65,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FMediosDePago();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -72,6 +75,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FConfig();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -91,6 +95,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FPagosRegistro();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -98,6 +103,7 @@ namespace GymCheck
 
 		private void semaforoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			FSemaforo.Instacia.StartPosition = FormStartPosition.Manual;
 			FSemaforo.Instacia.Location = ssecundario.Bounds.Location;
 			FSemaforo.Instacia.Show();
 			FSemaforo.Instacia.Activate();
@@ -139,6 +145,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FReportes();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -148,6 +155,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FModificarClientes();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = sprincipal.Bounds.Location;
 			ventana.ShowDialog();
 			this.Visible = true;
@@ -157,6 +165,7 @@ namespace GymCheck
 		{
 			this.Visible = false;
 			var ventana = new FReportes();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.ShowDialog();
 			this.Visible = true;
 		}
@@ -273,6 +282,7 @@ namespace GymCheck
 					if(s != sprincipal )
 					{
 						ssecundario = s;
+						this.BackColor = Color.Blue;
 						break;
 					}
 				}
