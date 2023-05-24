@@ -8,13 +8,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationDefaultFont>Georgia, 24pt</ApplicationDefaultFont>
     <StartupObject>GymCheck.Program</StartupObject>
-    <ApplicationIcon>Mancuerna.ico</ApplicationIcon>
+    <ApplicationIcon>Mancuerna roja.ico</ApplicationIcon>
     <SignAssembly>True</SignAssembly>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Mancuerna.ico" />
+    <Content Include="Mancuerna roja.ico" />
   </ItemGroup>
 
   <ItemGroup>

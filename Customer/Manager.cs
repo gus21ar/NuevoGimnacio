@@ -44,6 +44,7 @@ namespace Customer
 			ClienteNuevo = new CClienteDto();
 			padre = Padre;
 			var ventana = new FTomarFoto();
+			ventana.StartPosition = FormStartPosition.Manual;
 			ventana.Location = MyScreen.Bounds.Location;
 			VentanasActuales = new Dictionary<Ventanas, Form>();
 			VentanasActuales.Add(Ventanas.TomarFoto, ventana);

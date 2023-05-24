@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FTomarFoto));
 			btnSiguiente = new Button();
 			pbCamara = new PictureBox();
 			pbFoto = new PictureBox();
@@ -150,7 +151,8 @@
 			Controls.Add(pbFoto);
 			Controls.Add(pbCamara);
 			Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
-			FormBorderStyle = FormBorderStyle.None;
+			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(8, 7, 8, 7);
 			Name = "FTomarFoto";
 			StartPosition = FormStartPosition.CenterScreen;
