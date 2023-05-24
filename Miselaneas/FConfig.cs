@@ -110,7 +110,7 @@ namespace Miselaneas
 		{
 			if (rdbOxigen.Checked)
 			{
-				if (DataBaseSettings(".\\Sqlserver", "GymDB", "sa", "genius"))
+				if (DataBaseSettings("DESKTOP-H8VLRCJ\\Sqlserver", "GymDB", "sa", "genius"))
 					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Oxigen Gym", TipoMensaje.Informacion);
 				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
 			}
@@ -122,7 +122,7 @@ namespace Miselaneas
 			}
 			else if (rdbPrueba.Checked)
 			{
-				if (DataBaseSettings(".\\Sqlserver", "GymDBPrueba", "sa", "genius"))
+				if (DataBaseSettings("DESKTOP-H8VLRCJ\\Sqlserver", "GymDBPrueba", "sa", "genius"))
 					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Producción", TipoMensaje.Informacion);
 				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
 			}

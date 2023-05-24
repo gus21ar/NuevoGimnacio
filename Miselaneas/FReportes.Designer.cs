@@ -213,6 +213,7 @@
 			Controls.Add(rbtAsistencias);
 			Controls.Add(btnGenerar);
 			ForeColor = Color.White;
+			FormBorderStyle = FormBorderStyle.Fixed3D;
 			Name = "FReportes";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Reportes";

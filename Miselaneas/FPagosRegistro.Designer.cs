@@ -186,7 +186,7 @@
 			Controls.Add(txtDni);
 			Controls.Add(label1);
 			ForeColor = Color.White;
-			FormBorderStyle = FormBorderStyle.None;
+			FormBorderStyle = FormBorderStyle.Fixed3D;
 			Margin = new Padding(7, 8, 7, 8);
 			Name = "FPagosRegistro";
 			StartPosition = FormStartPosition.CenterParent;

@@ -100,12 +100,10 @@
 			// rdbDesarrollo
 			// 
 			rdbDesarrollo.AutoSize = true;
-			rdbDesarrollo.Checked = true;
 			rdbDesarrollo.Location = new Point(6, 137);
 			rdbDesarrollo.Name = "rdbDesarrollo";
 			rdbDesarrollo.Size = new Size(182, 42);
 			rdbDesarrollo.TabIndex = 2;
-			rdbDesarrollo.TabStop = true;
 			rdbDesarrollo.Text = "Desarrollo";
 			rdbDesarrollo.UseVisualStyleBackColor = true;
 			rdbDesarrollo.CheckedChanged += rdbDesarrollo_CheckedChanged;
@@ -113,6 +111,7 @@
 			// rdbPrueba
 			// 
 			rdbPrueba.AutoSize = true;
+			rdbPrueba.Checked = true;
 			rdbPrueba.Location = new Point(6, 89);
 			rdbPrueba.Name = "rdbPrueba";
 			rdbPrueba.Size = new Size(136, 42);
@@ -128,7 +127,6 @@
 			rdbOxigen.Name = "rdbOxigen";
 			rdbOxigen.Size = new Size(134, 42);
 			rdbOxigen.TabIndex = 0;
-			rdbOxigen.TabStop = true;
 			rdbOxigen.Text = "Oxigen";
 			rdbOxigen.UseVisualStyleBackColor = true;
 			// 
@@ -415,7 +413,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(761, 461);
 			Controls.Add(tabControl1);
-			FormBorderStyle = FormBorderStyle.FixedToolWindow;
+			FormBorderStyle = FormBorderStyle.Fixed3D;
 			Name = "FConfig";
 			StartPosition = FormStartPosition.CenterParent;
 			Text = "Configuracion";

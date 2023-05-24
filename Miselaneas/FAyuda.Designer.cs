@@ -118,10 +118,10 @@
 			Controls.Add(label2);
 			Controls.Add(label1);
 			Controls.Add(lblpri);
-			FormBorderStyle = FormBorderStyle.None;
+			FormBorderStyle = FormBorderStyle.Fixed3D;
 			Margin = new Padding(8);
 			Name = "FAyuda";
-			StartPosition = FormStartPosition.CenterParent;
+			StartPosition = FormStartPosition.Manual;
 			Text = "Contacto";
 			ResumeLayout(false);
 			PerformLayout();

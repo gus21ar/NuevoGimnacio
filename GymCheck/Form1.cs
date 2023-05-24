@@ -107,7 +107,6 @@ namespace GymCheck
 			FSemaforo.Instacia.Location = ssecundario.Bounds.Location;
 			FSemaforo.Instacia.Show();
 			FSemaforo.Instacia.Activate();
-
 		}
 
 		private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -261,8 +260,6 @@ namespace GymCheck
 				CControlPdf.CrearPdfAutomático();
 			}
 		}
-
-
 
 		#endregion
 
