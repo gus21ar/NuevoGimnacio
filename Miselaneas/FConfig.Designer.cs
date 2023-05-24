@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FConfig));
 			tabControl1 = new TabControl();
 			tbpRapido = new TabPage();
 			rdbDesarrollo = new RadioButton();
@@ -119,6 +120,7 @@
 			rdbPrueba.TabStop = true;
 			rdbPrueba.Text = "Prueba";
 			rdbPrueba.UseVisualStyleBackColor = true;
+			rdbPrueba.CheckedChanged += rdbPrueba_CheckedChanged;
 			// 
 			// rdbOxigen
 			// 
@@ -129,6 +131,7 @@
 			rdbOxigen.TabIndex = 0;
 			rdbOxigen.Text = "Oxigen";
 			rdbOxigen.UseVisualStyleBackColor = true;
+			rdbOxigen.CheckedChanged += rdbOxigen_CheckedChanged;
 			// 
 			// tPCadena
 			// 
@@ -414,6 +417,7 @@
 			ClientSize = new Size(761, 461);
 			Controls.Add(tabControl1);
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Name = "FConfig";
 			StartPosition = FormStartPosition.CenterParent;
 			Text = "Configuracion";

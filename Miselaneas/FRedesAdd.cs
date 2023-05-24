@@ -38,10 +38,5 @@ namespace Miselaneas
 				Mensaje.Mostrar("Ups", ex.Message, TipoMensaje.Error);
 			}
 		}
-
-		private void btnCerrar_Click(object sender, EventArgs e)
-		{
-			this.Close();
-		}
 	}
 }

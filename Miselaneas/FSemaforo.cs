@@ -175,11 +175,12 @@ namespace Miselaneas
 		private void FSemaforo_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			fSemaforo = null;
+			CPublicador.Instancia.NotificarCierre();
 		}
 
 		private void txtDni_KeyDown(object sender, KeyEventArgs e)
 		{
-			if(e.KeyData == Keys.Enter)
+			if (e.KeyData == Keys.Enter)
 			{
 				btnIngresar_Click(sender, new());
 			}

@@ -3,5 +3,6 @@
 	public interface IObservador
 	{
 		void Actualizar();
+		void ActualizarCierre();
 	}
 }

@@ -8,5 +8,6 @@ namespace Servicios.Observer
 		void Suscribir(IObservador observador);
 		void Desuscribir(IObservador observador);
 		void Notificar(IAcceso acceso);
+		void NotificarCierre();
 	}
 }

@@ -28,11 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAyuda));
 			lblpri = new Label();
 			label1 = new Label();
 			label2 = new Label();
 			label3 = new Label();
-			btnCerrar = new Button();
 			label4 = new Label();
 			SuspendLayout();
 			// 
@@ -84,18 +84,6 @@
 			label3.TabIndex = 3;
 			label3.Text = "Patagones 305 (223 501-9653) ";
 			// 
-			// btnCerrar
-			// 
-			btnCerrar.BackColor = Color.Firebrick;
-			btnCerrar.ForeColor = Color.White;
-			btnCerrar.Location = new Point(754, 30);
-			btnCerrar.Name = "btnCerrar";
-			btnCerrar.Size = new Size(57, 48);
-			btnCerrar.TabIndex = 4;
-			btnCerrar.Text = "X";
-			btnCerrar.UseVisualStyleBackColor = false;
-			btnCerrar.Click += btnCerrar_Click;
-			// 
 			// label4
 			// 
 			label4.AutoSize = true;
@@ -113,12 +101,12 @@
 			BackColor = Color.DimGray;
 			ClientSize = new Size(837, 539);
 			Controls.Add(label4);
-			Controls.Add(btnCerrar);
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
 			Controls.Add(lblpri);
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(8);
 			Name = "FAyuda";
 			StartPosition = FormStartPosition.Manual;
@@ -133,7 +121,6 @@
 		private Label label1;
 		private Label label2;
 		private Label label3;
-		private Button btnCerrar;
 		private Label label4;
 	}
 }

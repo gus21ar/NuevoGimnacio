@@ -2,6 +2,6 @@
 {
 	public interface IObservar
 	{
-		void Actualizar();
+		void Actualizar();		
 	}
 }

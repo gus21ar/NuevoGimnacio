@@ -16,6 +16,7 @@ namespace GymCheck
 		Screen[] screens = Screen.AllScreens; //Obtiene todos los monitores
 		Screen sprincipal, ssecundario;
 		bool IsSeconScreen = false;
+		bool IsAsistenciaOpen = false;
 		#endregion
 		public Form1()
 		{
@@ -84,7 +85,7 @@ namespace GymCheck
 		private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.Visible = false;
-			Manager.Iniciar(this,sprincipal);
+			Manager.Iniciar(this, sprincipal);
 			this.Visible = true;
 		}
 
@@ -103,10 +104,35 @@ namespace GymCheck
 
 		private void semaforoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			FSemaforo.Instacia.StartPosition = FormStartPosition.Manual;
-			FSemaforo.Instacia.Location = ssecundario.Bounds.Location;
-			FSemaforo.Instacia.Show();
-			FSemaforo.Instacia.Activate();
+			if (IsAsistenciaOpen)
+			{
+				FSemaforo.Instacia.Show();
+				FSemaforo.Instacia.Activate();
+			}
+			else
+			{
+				FSemaforo.Instacia.StartPosition = FormStartPosition.Manual;
+				FSemaforo.Instacia.Location = ssecundario.Bounds.Location;
+				FSemaforo.Instacia.Show();
+				FSemaforo.Instacia.Activate();
+				ActivarAsitencia(true);
+			}
+		}
+
+		private void ActivarAsitencia(bool act)
+		{
+			if (act)
+			{
+				IsAsistenciaOpen = true;
+				txtTestigoAsistencia.Text = "La ventana Asistencia está abierta";
+				txtTestigoAsistencia.BackColor = Color.Green;
+			}
+			else
+			{
+				IsAsistenciaOpen = false;
+				txtTestigoAsistencia.Text = "La ventana Asistencia está cerrada";
+				txtTestigoAsistencia.BackColor = Color.Red;
+			}
 		}
 
 		private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -271,15 +297,14 @@ namespace GymCheck
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			IsSeconScreen = screens.Length > 1;
-			if(IsSeconScreen)
+			if (IsSeconScreen)
 			{
 				sprincipal = Screen.PrimaryScreen;
-				foreach(Screen s in screens)
+				foreach (Screen s in screens)
 				{
-					if(s != sprincipal )
+					if (s != sprincipal)
 					{
 						ssecundario = s;
-						this.BackColor = Color.Blue;
 						break;
 					}
 				}
@@ -288,6 +313,11 @@ namespace GymCheck
 			{
 				sprincipal = ssecundario = Screen.PrimaryScreen;
 			}
+		}
+
+		public void ActualizarCierre()
+		{
+			ActivarAsitencia(false);
 		}
 	}
 }

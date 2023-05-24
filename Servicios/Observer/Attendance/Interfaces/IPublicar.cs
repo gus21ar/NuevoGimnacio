@@ -5,6 +5,6 @@ namespace Servicios.Observer.Attendance.Interfaces
 	{
 		void Suscribir(IObservar oObservar);
 		void Desuscribir(IObservar oObservar);
-		void Notificar();
+		void Notificar();		
 	}
 }

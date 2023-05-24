@@ -52,5 +52,16 @@ namespace Servicios.Observer.Implementacion
 		{
 			_observadores.Add(observador);
 		}
+
+		public void NotificarCierre()
+		{
+			if (_observadores.Count > 0)
+			{
+				foreach (var observador in _observadores)
+				{
+					observador.ActualizarCierre();
+				}
+			}
+		}
 	}
 }

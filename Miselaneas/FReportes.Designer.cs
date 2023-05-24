@@ -30,6 +30,7 @@
 		{
 			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
 			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReportes));
 			dtpDesde = new DateTimePicker();
 			btnGenerar = new Button();
 			rbtAsistencias = new RadioButton();
@@ -214,6 +215,7 @@
 			Controls.Add(btnGenerar);
 			ForeColor = Color.White;
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Name = "FReportes";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Reportes";

@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMediosDePago));
 			label1 = new Label();
 			label2 = new Label();
 			txtNombre = new TextBox();
@@ -88,6 +89,7 @@
 			Controls.Add(label2);
 			Controls.Add(label1);
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(8);
 			Name = "FMediosDePago";
 			StartPosition = FormStartPosition.CenterParent;

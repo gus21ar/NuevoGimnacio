@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSemaforo));
 			label1 = new Label();
 			txtDni = new TextBox();
 			btnIngresar = new Button();
@@ -146,6 +147,7 @@
 			Controls.Add(txtDni);
 			Controls.Add(label1);
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(8);
 			Name = "FSemaforo";
 			StartPosition = FormStartPosition.CenterScreen;

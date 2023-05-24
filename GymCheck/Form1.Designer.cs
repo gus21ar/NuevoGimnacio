@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			menuPrincipal = new MenuStrip();
 			clientesToolStripMenuItem = new ToolStripMenuItem();
 			agregarToolStripMenuItem = new ToolStripMenuItem();
@@ -58,6 +59,7 @@
 			btnReportes = new Button();
 			tmrReportes = new System.Windows.Forms.Timer(components);
 			btnUpdateCliente = new Button();
+			txtTestigoAsistencia = new TextBox();
 			menuPrincipal.SuspendLayout();
 			panVerCliente.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pbClienteAcces).BeginInit();
@@ -274,7 +276,7 @@
 			btnAsistencia.Location = new Point(890, 68);
 			btnAsistencia.Margin = new Padding(8);
 			btnAsistencia.Name = "btnAsistencia";
-			btnAsistencia.Size = new Size(390, 208);
+			btnAsistencia.Size = new Size(390, 155);
 			btnAsistencia.TabIndex = 3;
 			btnAsistencia.Text = "Asistencia";
 			btnAsistencia.UseVisualStyleBackColor = false;
@@ -366,12 +368,28 @@
 			btnUpdateCliente.UseVisualStyleBackColor = false;
 			btnUpdateCliente.Click += modificarToolStripMenuItem_Click;
 			// 
+			// txtTestigoAsistencia
+			// 
+			txtTestigoAsistencia.BackColor = Color.Red;
+			txtTestigoAsistencia.BorderStyle = BorderStyle.None;
+			txtTestigoAsistencia.Font = new Font("Georgia", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+			txtTestigoAsistencia.ForeColor = Color.White;
+			txtTestigoAsistencia.Location = new Point(890, 234);
+			txtTestigoAsistencia.Multiline = true;
+			txtTestigoAsistencia.Name = "txtTestigoAsistencia";
+			txtTestigoAsistencia.ReadOnly = true;
+			txtTestigoAsistencia.Size = new Size(390, 32);
+			txtTestigoAsistencia.TabIndex = 7;
+			txtTestigoAsistencia.Text = "La ventana asistencia está cerrada";
+			txtTestigoAsistencia.TextAlign = HorizontalAlignment.Center;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
 			ClientSize = new Size(1284, 711);
+			Controls.Add(txtTestigoAsistencia);
 			Controls.Add(btnUpdateCliente);
 			Controls.Add(btnReportes);
 			Controls.Add(panVerCliente);
@@ -379,6 +397,7 @@
 			Controls.Add(btnPagos);
 			Controls.Add(BtnClientes);
 			Controls.Add(menuPrincipal);
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			MainMenuStrip = menuPrincipal;
 			Margin = new Padding(8);
 			MinimumSize = new Size(1000, 750);
@@ -426,5 +445,6 @@
 		private ToolStripMenuItem generarToolStripMenuItem;
 		private System.Windows.Forms.Timer tmrReportes;
 		private Button btnUpdateCliente;
+		private TextBox txtTestigoAsistencia;
 	}
 }

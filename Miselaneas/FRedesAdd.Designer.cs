@@ -28,18 +28,18 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRedesAdd));
 			label1 = new Label();
 			label2 = new Label();
 			txtNombre = new TextBox();
 			btnAgregar = new Button();
-			btnCerrar = new Button();
 			SuspendLayout();
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
 			label1.Font = new Font("Georgia", 48F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(17, 9);
+			label1.Location = new Point(111, 9);
 			label1.Margin = new Padding(8, 0, 8, 0);
 			label1.Name = "label1";
 			label1.Size = new Size(566, 72);
@@ -82,32 +82,20 @@
 			btnAgregar.UseVisualStyleBackColor = false;
 			btnAgregar.Click += btnAgregar_Click;
 			// 
-			// btnCerrar
-			// 
-			btnCerrar.BackColor = Color.Firebrick;
-			btnCerrar.Location = new Point(594, 12);
-			btnCerrar.Name = "btnCerrar";
-			btnCerrar.Size = new Size(169, 69);
-			btnCerrar.TabIndex = 2;
-			btnCerrar.Text = "Cerrar";
-			btnCerrar.UseVisualStyleBackColor = false;
-			btnCerrar.Click += btnCerrar_Click;
-			// 
 			// FRedesAdd
 			// 
 			AcceptButton = btnAgregar;
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
-			CancelButton = btnCerrar;
 			ClientSize = new Size(784, 391);
-			Controls.Add(btnCerrar);
 			Controls.Add(btnAgregar);
 			Controls.Add(txtNombre);
 			Controls.Add(label2);
 			Controls.Add(label1);
 			ForeColor = Color.White;
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(8);
 			Name = "FRedesAdd";
 			ShowIcon = false;
@@ -122,6 +110,5 @@
 		private Label label2;
 		private TextBox txtNombre;
 		private Button btnAgregar;
-		private Button btnCerrar;
 	}
 }

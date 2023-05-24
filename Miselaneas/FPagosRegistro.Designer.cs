@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FPagosRegistro));
 			label1 = new Label();
 			txtDni = new TextBox();
 			label2 = new Label();
@@ -187,6 +188,7 @@
 			Controls.Add(label1);
 			ForeColor = Color.White;
 			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(7, 8, 7, 8);
 			Name = "FPagosRegistro";
 			StartPosition = FormStartPosition.CenterParent;

@@ -38,16 +38,23 @@ namespace Miselaneas
 
 		private void btnGuardar_Click(object sender, EventArgs e)
 		{
-			servidor = txtServidor.Text ?? servidor;
-			baseDatos = txtBase.Text ?? baseDatos;
-			usuario = txtUsuario.Text ?? usuario;
-			password = txtPass.Text ?? password;
+			try
+			{
+				servidor = txtServidor.Text ?? servidor;
+				baseDatos = txtBase.Text ?? baseDatos;
+				usuario = txtUsuario.Text ?? usuario;
+				password = txtPass.Text ?? password;
 
-			EscribirConfig("Servidor", servidor);
-			EscribirConfig("Database", baseDatos);
-			EscribirConfig("User", usuario);
-			EscribirConfig("Password", password);
-			Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión", TipoMensaje.Informacion);
+				EscribirConfig("Servidor", servidor);
+				EscribirConfig("Database", baseDatos);
+				EscribirConfig("User", usuario);
+				EscribirConfig("Password", password);
+				Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión", TipoMensaje.Informacion);
+			}
+			catch
+			{
+
+			}
 		}
 		private void CargarDatos()
 		{
@@ -108,23 +115,18 @@ namespace Miselaneas
 
 		private void rdbDesarrollo_CheckedChanged(object sender, EventArgs e)
 		{
-			if (rdbOxigen.Checked)
+			if (rdbDesarrollo.Checked)
 			{
-				if (DataBaseSettings("DESKTOP-H8VLRCJ\\Sqlserver", "GymDB", "sa", "genius"))
-					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Oxigen Gym", TipoMensaje.Informacion);
-				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
-			}
-			else if (rdbDesarrollo.Checked)
-			{
-				if (DataBaseSettings("SAIKANO\\SQLEXPRESS", "GymDB", "sa", "2016"))
-					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Desarrollo", TipoMensaje.Informacion);
-				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
-			}
-			else if (rdbPrueba.Checked)
-			{
-				if (DataBaseSettings("DESKTOP-H8VLRCJ\\Sqlserver", "GymDBPrueba", "sa", "genius"))
-					Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Producción", TipoMensaje.Informacion);
-				else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+				try
+				{
+					if (DataBaseSettings("SAIKANO\\SQLEXPRESS", "GymDB", "sa", "2016"))
+						Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Desarrollo", TipoMensaje.Informacion);
+					else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+				}
+				catch
+				{
+
+				}
 			}
 		}
 
@@ -152,6 +154,40 @@ namespace Miselaneas
 		private void tPRutas_Enter(object sender, EventArgs e)
 		{
 			CargarRutas();
+		}
+
+		private void rdbPrueba_CheckedChanged(object sender, EventArgs e)
+		{
+			if (rdbPrueba.Checked)
+			{
+				try
+				{
+					if (DataBaseSettings("DESKTOP-H8VLRCJ\\Sqlserver", "GymDBPrueba", "sa", "genius"))
+						Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Producción", TipoMensaje.Informacion);
+					else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+				}
+				catch
+				{
+
+				}
+			}
+		}
+
+		private void rdbOxigen_CheckedChanged(object sender, EventArgs e)
+		{
+			if (rdbOxigen.Checked)
+			{
+				try
+				{
+					if (DataBaseSettings("DESKTOP-H8VLRCJ\\Sqlserver", "GymDB", "sa", "genius"))
+						Mensaje.Mostrar("Exito", "Se ha actualizdo la conexión a Oxigen Gym", TipoMensaje.Informacion);
+					else Mensaje.Mostrar("Error", "No se ha podido actualizar la conexión", TipoMensaje.Error);
+				}
+				catch
+				{
+
+				}
+			}
 		}
 	}
 }

@@ -29,6 +29,6 @@ namespace Servicios.Observer.Attendance.Implementacion
 			{
 				observador.Actualizar();
 			}
-		}
+		}		
 	}	
 }

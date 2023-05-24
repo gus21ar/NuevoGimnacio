@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			btnCerrar = new Button();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FModificarClientes));
 			label1 = new Label();
 			label2 = new Label();
 			txtDniAbuscar = new TextBox();
@@ -87,24 +87,12 @@
 			pnlAceptar.SuspendLayout();
 			SuspendLayout();
 			// 
-			// btnCerrar
-			// 
-			btnCerrar.BackColor = Color.Firebrick;
-			btnCerrar.ForeColor = Color.White;
-			btnCerrar.Location = new Point(589, 8);
-			btnCerrar.Name = "btnCerrar";
-			btnCerrar.Size = new Size(133, 56);
-			btnCerrar.TabIndex = 0;
-			btnCerrar.Text = "Cerrar";
-			btnCerrar.UseVisualStyleBackColor = false;
-			btnCerrar.Click += btnCerrar_Click;
-			// 
 			// label1
 			// 
 			label1.AutoSize = true;
 			label1.Font = new Font("Georgia", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
 			label1.ForeColor = Color.White;
-			label1.Location = new Point(122, 21);
+			label1.Location = new Point(16, 9);
 			label1.Name = "label1";
 			label1.Size = new Size(462, 43);
 			label1.TabIndex = 1;
@@ -154,7 +142,7 @@
 			tbcCliente.Controls.Add(tbpRedes);
 			tbcCliente.Controls.Add(tbpOtros);
 			tbcCliente.Enabled = false;
-			tbcCliente.Location = new Point(12, 169);
+			tbcCliente.Location = new Point(12, 133);
 			tbcCliente.Name = "tbcCliente";
 			tbcCliente.SelectedIndex = 0;
 			tbcCliente.Size = new Size(710, 414);
@@ -587,7 +575,7 @@
 			// pnlAceptar
 			// 
 			pnlAceptar.Controls.Add(btnAceptar);
-			pnlAceptar.Location = new Point(12, 647);
+			pnlAceptar.Location = new Point(12, 601);
 			pnlAceptar.Name = "pnlAceptar";
 			pnlAceptar.Size = new Size(710, 100);
 			pnlAceptar.TabIndex = 6;
@@ -609,7 +597,7 @@
 			lblInfo.AutoSize = true;
 			lblInfo.Font = new Font("Georgia", 18F, FontStyle.Regular, GraphicsUnit.Point);
 			lblInfo.ForeColor = Color.Khaki;
-			lblInfo.Location = new Point(16, 615);
+			lblInfo.Location = new Point(16, 569);
 			lblInfo.Name = "lblInfo";
 			lblInfo.Size = new Size(625, 29);
 			lblInfo.TabIndex = 7;
@@ -621,7 +609,7 @@
 			AutoScaleDimensions = new SizeF(19F, 38F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DimGray;
-			ClientSize = new Size(738, 759);
+			ClientSize = new Size(738, 712);
 			Controls.Add(lblInfo);
 			Controls.Add(pnlAceptar);
 			Controls.Add(tbcCliente);
@@ -629,13 +617,14 @@
 			Controls.Add(txtDniAbuscar);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Controls.Add(btnCerrar);
 			Font = new Font("Georgia", 24F, FontStyle.Regular, GraphicsUnit.Point);
-			FormBorderStyle = FormBorderStyle.None;
+			FormBorderStyle = FormBorderStyle.Fixed3D;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(8);
 			Name = "FModificarClientes";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "FModificarClientes";
+			Text = "Modificar Clientes";
+			FormClosed += FModificarClientes_FormClosed;
 			tbcCliente.ResumeLayout(false);
 			tbpDatos.ResumeLayout(false);
 			tbpDatos.PerformLayout();
@@ -656,8 +645,6 @@
 		}
 
 		#endregion
-
-		private Button btnCerrar;
 		private Label label1;
 		private Label label2;
 		private TextBox txtDniAbuscar;

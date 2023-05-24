@@ -102,11 +102,6 @@ namespace Customer
 		}
 
 		#endregion
-		private void btnCerrar_Click(object sender, EventArgs e)
-		{
-			CerrarCamara();
-			this.Close();
-		}
 
 		private void txtDniAbuscar_TextChanged(object sender, EventArgs e)
 		{
@@ -138,8 +133,7 @@ namespace Customer
 				Mensaje.Mostrar("OK", "Redes agregadas con exito", TipoMensaje.Informacion);
 			else
 				Mensaje.Mostrar("Ups", "Error al agregar las redes", TipoMensaje.Error);
-
-			btnCerrar_Click(new(), new());
+			this.Close();
 		}
 
 		private void tbpFoto_Enter(object sender, EventArgs e)
@@ -310,6 +304,11 @@ namespace Customer
 		private void lblInfo_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void FModificarClientes_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			CerrarCamara();
 		}
 	}
 }
